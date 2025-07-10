@@ -1,3 +1,11 @@
+// Heap Sort:- Sort Job Applicants by Salary
+// Problem Statement:- A company receives job applications with different expected salary demands. Implement Heap Sort to sort these salary demands in ascending order.
+// Hint:-
+// Build a Max Heap from the array.
+// Extract the largest element (root) and place it at the end.
+// Reheapify the remaining elements and repeat until sorted.
+
+
 package BubbleSort;
 import java.util.Scanner;
 
