@@ -1,3 +1,11 @@
+// Quick Sort:- Sort Product Prices
+// Problem Statement:- An e-commerce company wants to display product prices in ascending order. Implement Quick Sort to sort the product prices.
+// Hint:-
+// Pick a pivot element (first, last, or random).
+// Partition the array such that elements smaller than the pivot are on the left and larger ones are on the right.
+// Recursively apply Quick Sort on left and right partitions.
+
+
 package BubbleSort;
 import java.util.Scanner;
 
