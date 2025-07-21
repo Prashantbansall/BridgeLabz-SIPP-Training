@@ -19,7 +19,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ## 📆 Week 1 & 2: Core Java  
 > **Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
-> **Duration:** *10 June - 21 June*
+> **Duration:** *10 June - 20 June*
 
 ---
 
@@ -111,7 +111,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-### 🗓️ 07 – Java String Handling & Functions (21 June)  
+### 🗓️ 07 – Java String Handling & Functions (20 June)  
 📁 [`Java-StringsHandling`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-StringsHandling)
 
 #### ✅ Concepts Covered:
@@ -121,7 +121,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-## 🧠 Summary: What I Learned (10 June – 21 June)
+## 🧠 Summary: What I Learned (10 June – 20 June)
 
 During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong foundation in Java programming:
 
