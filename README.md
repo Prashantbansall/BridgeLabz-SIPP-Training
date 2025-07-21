@@ -18,8 +18,8 @@ This repository contains categorized Java programming concepts, hands-on assignm
 ---
 
 ## 📆 Week 1 & 2: Core Java  
-**Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
-**Duration:** *10 June - 21 June*
+> **Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
+> **Duration:** *10 June - 21 June*
 
 ---
 
