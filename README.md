@@ -50,7 +50,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-### 🗓️ 03 – Java Built-in Function & Date-Time (13 June)  
+### 🗓️ 03 – Java Built-in Functions & Date-Time (13 June)  
 📁 [`Java-Built-in-Function`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Built-in-Function)
 
 #### ✅ Concepts Covered:
