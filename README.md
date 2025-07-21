@@ -111,7 +111,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-### 🗓️ 07 – java String Handling & Functions (21 June)  
+### 🗓️ 07 – Java String Handling & Functions (21 June)  
 📁 [`Java-StringsHandling`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-StringsHandling)
 
 #### ✅ Concepts Covered:
