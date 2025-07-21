@@ -157,7 +157,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 #### ✅ Concepts Covered:
 - 🏗️ Java Constructors – Default, parameterized constructors  
 - 🧬 Instance vs Class Variables – Memory behavior and usage  
-- 🔐 Access Modifiers – `public`, `private`, `protected`, and default access  
+- 🔐 Access Modifiers – `public`, `private`, `protected`, and `default` access  
 
 ---
 
