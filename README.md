@@ -23,7 +23,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-### 🗓️ Day 1 – Java Programming Elements (10 June)  
+### 🗓️ 01 – Java Programming Elements (10 June)  
 📁 [`Java-Programming-Elements`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Programming-Elements)
 
 #### ✅ Concepts Covered:
@@ -37,4 +37,29 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
+### 🗓️ 02 – Java Control Flows (11 June)  
+📁 [`Java-Control-Flows`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Control-Flows)
 
+#### ✅ Concepts Covered:
+1. 🔁 Control Structures – Decision making & loops  
+2. 🔘 Boolean Data Type – `true` and `false` operations  
+3. ❓ Conditional Statements – `if`, `else if`, `else`  
+4. 🔄 Loops – `for`, `while`, `do-while` with real-time examples  
+5. 🛑 Break & Continue – Flow control inside loops  
+6. 🔃 `switch` Statement – Multiple case handling
+
+---
+
+### 🗓️ 03 – Java Built-in Function & Date-Time (13 June)  
+📁 [`Java-Built-in-Function`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Built-in-Function)
+
+#### ✅ Concepts Covered:
+1. ➕ `Math` Class – Standard mathematical operations like `sqrt()`, `pow()`, `abs()`  
+2. 🎲 `Random` Class – Generating random numbers  
+3. 📅 Java 8 Date-Time API – `LocalDate`, `LocalTime`, `LocalDateTime` for handling time and date effectively
+
+---
+
+🔗 *More weeks and updates will be added soon. Stay tuned!*
+
+---
