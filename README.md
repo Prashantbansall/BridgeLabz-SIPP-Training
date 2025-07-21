@@ -10,8 +10,8 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 | Branch Name | Description |
 |-------------|-------------|
-| [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java) | Covers foundational Java concepts like variables, control flows, data types, loops, and more |
-| [`OOPS`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS) | Covers object-oriented programming principles including classes, inheritance, polymorphism, interfaces, and design diagrams |
+| [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java) | Covers foundational Java concepts like variables, control flows, data types, loops, arrays, strings, methods, and more |
+| [`OOPS`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS) | Covers object-oriented programming principles including classes, inheritance, polymorphism, interfaces, design diagrams and more |
 | `Workshop` | Hands-on exercises, group projects, and code challenges (coming soon) |
 | `DSA` | Data Structures and Algorithms using Java (coming soon) |
 
