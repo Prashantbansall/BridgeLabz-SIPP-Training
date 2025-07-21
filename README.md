@@ -15,4 +15,26 @@ This repository contains categorized Java programming concepts, hands-on assignm
 | `Workshop` | Hands-on exercises, group projects, and code challenges (coming soon) |
 | `DSA` | Data Structures and Algorithms using Java (coming soon) |
 
+---
+
+## 📆 Week 1: Core Java  
+**Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
+**Duration:** *10 June - 21 June*
+
+---
+
+### 🗓️ Day 1 – Java Programming Elements (10 June)  
+📁 [`Java-Programming-Elements`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Programming-Elements)
+
+#### ✅ Concepts Covered:
+1. 📝 Java Comments – Single-line (`//`) and multi-line (`/* */`) documentation  
+2. 📦 Basic Data Types – `int`, `float`, `double`, `char`, `boolean`  
+3. 🧠 Variables – Declaration, initialization, and scope  
+4. ➕ Arithmetic Operators – `+`, `-`, `*`, `/`, `%`  
+5. 🎯 Operator Precedence – Evaluation order in expressions  
+6. 🔁 Type Conversion – Implicit (widening) and explicit (casting)  
+7. 🎤 User Input – Using `Scanner` class to read input from console  
+
+---
+
 
