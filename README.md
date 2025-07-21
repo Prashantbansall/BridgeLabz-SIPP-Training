@@ -17,7 +17,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-## 📆 Week 1: Core Java  
+## 📆 Week 1 & 2: Core Java  
 **Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
 **Duration:** *10 June - 21 June*
 
@@ -50,7 +50,58 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-### 🗓️ 03 – Java Common Built-in Functions & Date-Time Built-in Functions (13 June)  
+### 🗓️ 03 – Java Arrays (13 June)  
+📁 [`Java-Arrays`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Arrays)
+
+#### ✅ Concepts Covered:
+1. 🧮 Java Arrays – Store multiple values of the same type  
+2. 🏗️ Create an Array – Declare and initialize arrays  
+3. 🔍 Access an Array – Retrieve elements using indices  
+4. 🔄 Array Traversal – Use `for` loops to iterate over arrays  
+5. ✏️ Modify Array – Change values stored in an array  
+6. 📏 Array Length – Use `.length` property to get array size  
+7. 🧊 1D Arrays – Basic linear array structure  
+8. 🧱 2D Arrays – Matrix-style data handling  
+9. 🔎 Accessing Multi-Dimensional Arrays – Use nested loops  
+10. 📐 Multi-Dimensional Size – Determine size and dimensions  
+11. 🚫 System Error & Exit – Use `System.err.println()` and `System.exit()` for control flow 
+
+---
+
+### 🗓️ 04 – Java Methods (16 June)  
+📁 [`Java-Methods`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Methods)
+
+#### ✅ Concepts Covered:
+1. 🛠️ User-Defined Methods – Custom reusable blocks of code  
+2. 🔁 Method Reuse – Call methods multiple times  
+3. 📥 Dynamic Methods – Accept input via parameters  
+4. 🔁 Recursive Methods – Methods calling themselves  
+5. ⚙️ Static Methods – Defined with `static` keyword  
+6. 🧰 Standard Library Methods – Pre-built utility methods  
+7. ➕ Math Class – Use `java.lang.Math` functions like `sqrt()`, `pow()`  
+
+---
+
+### 🗓️ 05 – Java Strings & Exception Basics (17 June)  
+📁 [`Java-Strings`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Strings)
+
+#### ✅ Concepts Covered:
+1. 🔤 Java Strings – Sequence of characters  
+2. 🧪 Create Strings – Using literals and constructors  
+3. 🧵 Escape Sequences – Use of `\n`, `\t`, etc.  
+4. 🎤 String Input – Accepting strings from the user  
+5. 📚 String Arrays – Arrays of strings  
+6. 📦 String as Parameters – Pass strings to methods  
+7. 🧰 String Methods – Use built-in methods like `length()`, `charAt()`, `substring()`  
+8. 🔢 ASCII Codes – Understand characters and their ASCII values  
+9. ⚠️ Java Exceptions – Runtime and compile-time error handling  
+10. 🧱 Exception Hierarchy – Checked vs Unchecked  
+11. 🛑 RuntimeException – Unchecked exception handling  
+12. 📛 Checked Exceptions – Must be handled or declared
+
+---
+
+### 🗓️ 06 – Java Common Built-in Functions & Date-Time Built-in Functions (19 June)  
 📁 [`Java-Built-in-Function`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Built-in-Function)
 
 #### ✅ Concepts Covered:
@@ -60,6 +111,31 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-🔗 *More weeks and updates will be added soon. Stay tuned!*
+### 🗓️ 07 – String Handling & Functions (21 June)  
+📁 [`Java-StringsHandling`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-StringsHandling)
+
+#### ✅ Concepts Covered:
+1. 🧵 Advanced String Handling – Manipulate and process complex strings  
+2. 🛠️ Common String Functions – `equals()`, `compareTo()`, `concat()`, etc.  
+3. 🔁 Parameter Passing & Return – Send and receive strings in/from methods  
+
+---
+
+## 🧠 Summary: What I Learned (10 June – 21 June)
+
+During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong foundation in Java programming:
+
+- ✨ Understood core syntax, data types, and how Java programs are structured  
+- 🔀 Learned how control flows work using conditions and loops  
+- 📊 Worked with arrays and matrices to handle data collections  
+- 🔧 Practiced writing and reusing methods for modular programming  
+- 🔡 Mastered string creation, manipulation, and formatting  
+- ⚠️ Explored Java exception handling, its types, and real-time error management  
+
+> 💡 These sessions provided practical exposure through assignments and helped improve my logical thinking and Java fluency.
+
+---
+
+📌 *More updates coming soon from Week 2...*
 
 ---
