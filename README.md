@@ -151,7 +151,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 ---
 
-### 🗓️ Day 2 – Constructors, Instance vs. Class Variables, Access Modifiers (24 June)  
+### 🗓️ 02 – Constructors, Instance vs. Class Variables, Access Modifiers (24 June)  
 📁 [`Java-Constructors-InstanceVariables-VS-ClassVariables-AccessModifiers`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Constructors-InstanceVariables-VS-ClassVariables-AccessModifiers)
 
 #### ✅ Concepts Covered:
@@ -161,7 +161,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 ---
 
-### 🗓️ Day 3 – this, static, final, instanceof (25 June)  
+### 🗓️ 03 – this, static, final, instanceof (25 June)  
 📁 [`Java-this-static-final-Keywords-and-instanceof-Operators`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-this-static-final-Keywords-and-instanceof-Operators)
 
 #### ✅ Concepts Covered:
@@ -172,7 +172,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 ---
 
-### 🗓️ Day 4 – Object Modeling & Class Diagrams (26 June)  
+### 🗓️ 04 – Object Modeling & Class Diagrams (26 June)  
 📁 [`Java-ObjectModeling-and-ClassDiagram`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-ObjectModeling-and-ClassDiagram)
 
 #### ✅ Concepts Covered:
@@ -183,7 +183,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 ---
 
-### 🗓️ Day 5 – Java Inheritance (1 July)  
+### 🗓️ 05 – Java Inheritance (1 July)  
 📁 [`Java-Inheritance`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Inheritance)
 
 #### ✅ Concepts Covered:
@@ -196,7 +196,7 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 ---
 
-### 🗓️ Day 6 – Encapsulation, Interfaces, Abstract Classes, Polymorphism (2 July)  
+### 🗓️ 06 – Encapsulation, Interfaces, Abstract Classes, Polymorphism (2 July)  
 📁 [`Java-Encapsulation-Interface-AbstractClasses-and-Polymorphism`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Encapsulation-Interface-AbstractClasses-and-Polymorphism)
 
 #### ✅ Concepts Covered:
