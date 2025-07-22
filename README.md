@@ -12,7 +12,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 |-------------|-------------|
 | [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java) | Covers foundational Java concepts like variables, control flows, data types, loops, arrays, strings, methods, and more |
 | [`OOPS`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS) | Covers object-oriented programming principles including classes, inheritance, polymorphism, interfaces, design diagrams and more |
-| `Workshop` | Hands-on exercises, group projects, and code challenges (coming soon) |
+| [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop) | Hands-on scenario-based exercises, code challenges, and mini-projects to apply Java concepts in real-world simulations |
 | `DSA` | Data Structures and Algorithms using Java (coming soon) |
 
 ---
@@ -222,8 +222,39 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ---
 
-📌 Stay tuned for:
-- 🔧 **Workshop branch** – Live exercises and projects
-- 🧮 **DSA branch** – Data structures and algorithm mastery using Java
+## 📙 Workshop & Scenario-Based Coding (8 July – ongoing)
+
+📁 Branch: [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop)
+
+### 📅 8 July – [Vehicle Rental Application Scenario](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/Vehicle-Rental-Application-Scenario)
+
+**📝 Objective:**  
+Create a rental system that supports renting different types of vehicles (Bike, Car, Truck) to customers and calculates rental fees based on the number of days.
+
+#### ✅ Concepts Used:
+- 🧱 Class Design: Vehicle (base), Car, Bike, Truck (subclasses), Customer
+- ⚙️ Constructors: Initialization logic for vehicle-specific rates
+- 🔐 Access Modifiers: `protected` fields to allow subclass inheritance
+- 🧩 Interface: `Rentable` interface for rental operations
+- ➗ Operators: Applied in rent calculation logic (`baseRate × days ± extras`)
+
+#### 💡 OOP Concepts Demonstrated:
+- **Abstraction**: `Rentable` interface abstracts rental calculation logic
+- **Inheritance**: All vehicle types inherit from a base `Vehicle` class
+- **Polymorphism**: `calculateRent()` is implemented differently by each vehicle
+- **Encapsulation**: Fields are kept private and accessed through setters/getters
+
+🔗 Code Directory: [Vehicle Rental App](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/Vehicle-Rental-Application-Scenario)
+
+---
+
+## 🛠 Upcoming Modules:
+- 🚀 More Workshop exercises
+- 📊 Data Structures & Algorithms in Java
+- 📚 Real-world projects & challenges
+
+---
+
+Thank you for visiting! Happy coding 🚀
 
 ---
