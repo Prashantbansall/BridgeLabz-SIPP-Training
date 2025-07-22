@@ -14,7 +14,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 | [`OOPS`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS) | Covers object-oriented programming principles including classes, inheritance, polymorphism, interfaces, design diagrams and more |
 | [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop) | Hands-on scenario-based exercises, code challenges, and mini-projects to apply Java concepts in real-world simulations |
 | `DSA` | Data Structures and Algorithms using Java (coming soon) |
-| `Generics&Collections` | Generics using Java (coming soon) |
+| `Generics&Collections` | Generics and Collections in Java (coming soon) |
 
 ---
 
