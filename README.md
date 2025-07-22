@@ -42,12 +42,12 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Control-Flows`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Control-Flows)
 
 #### ✅ Concepts Covered:
-- 🔁 Control Structures – Decision making & loops  
-- 🔘 Boolean Data Type – `true` and `false` operations  
-- ❓ Conditional Statements – `if`, `else if`, `else`  
-- 🔄 Loops – `for`, `while`, `do-while` with real-time examples  
-- 🛑 Break & Continue – Flow control inside loops  
-- 🔃 `switch` Statement – Multiple case handling
+- **Control Structures** – Decision making & loops  
+- **Boolean Data Type** – `true` and `false` operations  
+- **Conditional Statements** – `if`, `else if`, `else`  
+- **Loops** – `for`, `while`, `do-while` with real-time examples  
+- **Break & Continue** – Flow control inside loops  
+- **`switch` Statement** – Multiple case handling
 
 ---
 
@@ -55,17 +55,17 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Arrays`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Arrays)
 
 #### ✅ Concepts Covered:
-- 🧮 Java Arrays – Store multiple values of the same type  
-- 🏗️ Create an Array – Declare and initialize arrays  
-- 🔍 Access an Array – Retrieve elements using indices  
-- 🔄 Array Traversal – Use `for` loops to iterate over arrays  
-- ✏️ Modify Array – Change values stored in an array  
-- 📏 Array Length – Use `.length` property to get array size  
-- 🧊 1D Arrays – Basic linear array structure  
-- 🧱 2D Arrays – Matrix-style data handling  
-- 🔎 Accessing Multi-Dimensional Arrays – Use nested loops  
-- 📐 Multi-Dimensional Size – Determine size and dimensions  
-- 🚫 System Error & Exit – Use `System.err.println()` and `System.exit()` for control flow 
+- **Java Arrays** – Store multiple values of the same type  
+- **Create an Array** – Declare and initialize arrays  
+- **Access an Array** – Retrieve elements using indices  
+- **Array Traversal** – Use `for` loops to iterate over arrays  
+- **Modify Array** – Change values stored in an array  
+- **Array Length** – Use `.length` property to get array size  
+- **1D Arrays** – Basic linear array structure  
+- **2D Arrays** – Matrix-style data handling  
+- **Accessing Multi-Dimensional Arrays** – Use nested loops  
+- **Multi-Dimensional Size** – Determine size and dimensions  
+- **System Error & Exit** – Use `System.err.println()` and `System.exit()` for control flow 
 
 ---
 
@@ -73,13 +73,13 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Methods`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Methods)
 
 #### ✅ Concepts Covered:
-- 🛠️ User-Defined Methods – Custom reusable blocks of code  
-- 🔁 Method Reuse – Call methods multiple times  
-- 📥 Dynamic Methods – Accept input via parameters  
-- 🔁 Recursive Methods – Methods calling themselves  
-- ⚙️ Static Methods – Defined with `static` keyword  
-- 🧰 Standard Library Methods – Pre-built utility methods  
-- ➕ Math Class – Use `java.lang.Math` functions like `sqrt()`, `pow()`  
+- **User-Defined Methods** – Custom reusable blocks of code  
+- **Method Reuse** – Call methods multiple times  
+- **Dynamic Methods** – Accept input via parameters  
+- **Recursive Methods** – Methods calling themselves  
+- **Static Methods** – Defined with `static` keyword  
+- **Standard Library Methods** – Pre-built utility methods  
+- **Math Class** – Use `java.lang.Math` functions like `sqrt()`, `pow()`  
 
 ---
 
@@ -87,18 +87,18 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Strings`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Strings)
 
 #### ✅ Concepts Covered:
-- 🔤 Java Strings – Sequence of characters  
-- 🧪 Create Strings – Using literals and constructors  
-- 🧵 Escape Sequences – Use of `\n`, `\t`, etc.  
-- 🎤 String Input – Accepting strings from the user  
-- 📚 String Arrays – Arrays of strings  
-- 📦 String as Parameters – Pass strings to methods  
-- 🧰 String Methods – Use built-in methods like `length()`, `charAt()`, `substring()`  
-- 🔢 ASCII Codes – Understand characters and their ASCII values  
-- ⚠️ Java Exceptions – Runtime and compile-time error handling  
-- 🧱 Exception Hierarchy – Checked vs Unchecked  
-- 🛑 RuntimeException – Unchecked exception handling  
-- 📛 Checked Exceptions – Must be handled or declared
+- **Java Strings** – Sequence of characters  
+- **Create Strings** – Using literals and constructors  
+- **Escape Sequences** – Use of `\n`, `\t`, etc.  
+- **String Input** – Accepting strings from the user  
+- **String Arrays** – Arrays of strings  
+- **String as Parameters** – Pass strings to methods  
+- **String Methods** – Use built-in methods like `length()`, `charAt()`, `substring()`  
+- **ASCII Codes** – Understand characters and their ASCII values  
+- **Java Exceptions** – Runtime and compile-time error handling  
+- **Exception Hierarchy** – Checked vs Unchecked  
+- **RuntimeException** – Unchecked exception handling  
+- **Checked Exceptions** – Must be handled or declared
 
 ---
 
@@ -106,9 +106,9 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Built-in-Function`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Built-in-Function)
 
 #### ✅ Concepts Covered:
-- ➕ `Math` Class – Standard mathematical operations like `sqrt()`, `pow()`, `abs()`  
-- 🎲 `Random` Class – Generating random numbers  
-- 📅 Java 8 Date-Time API – `LocalDate`, `LocalTime`, `LocalDateTime` for handling time and date effectively
+- **`Math` Class** – Standard mathematical operations like `sqrt()`, `pow()`, `abs()`  
+- **`Random` Class** – Generating random numbers  
+- **Java 8 Date-Time API** – `LocalDate`, `LocalTime`, `LocalDateTime` for handling time and date effectively
 
 ---
 
@@ -116,9 +116,9 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-StringsHandling`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-StringsHandling)
 
 #### ✅ Concepts Covered:
-- 🧵 Advanced String Handling – Manipulate and process complex strings  
-- 🛠️ Common String Functions – `equals()`, `compareTo()`, `concat()`, etc.  
-- 🔁 Parameter Passing & Return – Send and receive strings in/from methods  
+- **Advanced String Handling** – Manipulate and process complex strings  
+- **Common String Functions** – `equals()`, `compareTo()`, `concat()`, etc.  
+- **Parameter Passing & Return** – Send and receive strings in/from methods  
 
 ---
 
