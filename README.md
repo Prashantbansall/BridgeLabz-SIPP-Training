@@ -20,7 +20,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ## 📆 Week 1 & 2: Core Java  
 > **Branch:** [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java)  
-> **Duration:** *10 June - 20 June*
+> **Duration:** *10 June - 22 June*
 
 ---
 
@@ -122,7 +122,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 ---
 
-## 🧠 Summary: What I Learned (10 June – 20 June)
+## 🧠 Summary: What I Learned (10 June – 22 June)
 
 During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong foundation in Java programming:
 
