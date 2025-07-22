@@ -28,13 +28,13 @@ This repository contains categorized Java programming concepts, hands-on assignm
 📁 [`Java-Programming-Elements`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java/Java-Programming-Elements)
 
 #### ✅ Concepts Covered:
-- 📝 Java Comments – Single-line (`//`) and multi-line (`/* */`) documentation  
-- 📦 Basic Data Types – `int`, `float`, `double`, `char`, `boolean`  
-- 🧠 Variables – Declaration, initialization, and scope  
-- ➕ Arithmetic Operators – `+`, `-`, `*`, `/`, `%`  
-- 🎯 Operator Precedence – Evaluation order in expressions  
-- 🔁 Type Conversion – Implicit (widening) and explicit (casting)  
-- 🎤 User Input – Using `Scanner` class to read input from console  
+- **Java Comments** – Single-line (`//`) and multi-line (`/* */`) documentation  
+- **Basic Data Types** – `int`, `float`, `double`, `char`, `boolean`  
+- **Variables** – Declaration, initialization, and scope  
+- **Arithmetic Operators** – `+`, `-`, `*`, `/`, `%`  
+- **Operator Precedence** – Evaluation order in expressions  
+- **Type Conversion** – Implicit (widening) and explicit (casting)  
+- **User Input** – Using `Scanner` class to read input from console  
 
 ---
 
