@@ -126,12 +126,12 @@ This repository contains categorized Java programming concepts, hands-on assignm
 
 During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong foundation in Java programming:
 
-- ✨ Understood core syntax, data types, and how Java programs are structured  
-- 🔀 Learned how control flows work using conditions and loops  
-- 📊 Worked with arrays and matrices to handle data collections  
-- 🔧 Practiced writing and reusing methods for modular programming  
-- 🔡 Mastered string creation, manipulation, and formatting  
-- ⚠️ Explored Java exception handling, its types, and real-time error management  
+- Understood core syntax, data types, and how Java programs are structured  
+- Learned how control flows work using conditions and loops  
+- Worked with arrays and matrices to handle data collections  
+- Practiced writing and reusing methods for modular programming  
+- Mastered string creation, manipulation, and formatting  
+- Explored Java exception handling, its types, and real-time error management  
 
 > 💡 These sessions provided practical exposure through assignments and helped improve my logical thinking and Java fluency.
 
@@ -147,8 +147,8 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-Classes-and-Objects`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Classes-and-Objects)
 
 #### ✅ Concepts Covered:
-- 🧮 Procedural vs Object-Oriented Programming  
-- 🧱 Classes & Objects – Represent real-world entities using class definitions and object instances  
+- Procedural vs Object-Oriented Programming  
+- **Classes & Objects** – Represent real-world entities using class definitions and object instances  
 
 ---
 
@@ -156,9 +156,9 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-Constructors-InstanceVariables-VS-ClassVariables-AccessModifiers`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Constructors-InstanceVariables-VS-ClassVariables-AccessModifiers)
 
 #### ✅ Concepts Covered:
-- 🏗️ Java Constructors – Default, parameterized constructors  
-- 🧬 Instance vs Class Variables – Memory behavior and usage  
-- 🔐 Access Modifiers – `public`, `private`, `protected`, and `default` access  
+- **Java Constructors** – Default, parameterized constructors  
+- **Instance vs Class Variables** – Memory behavior and usage  
+- **Access Modifiers** – `public`, `private`, `protected`, and `default` access  
 
 ---
 
@@ -166,10 +166,10 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-this-static-final-Keywords-and-instanceof-Operators`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-this-static-final-Keywords-and-instanceof-Operators)
 
 #### ✅ Concepts Covered:
-- 🔄 `this` – Refers to the current instance of a class  
-- 🧷 `static` – Class-level properties and methods  
-- 🔒 `final` – For constants, final classes, and methods  
-- 🔍 `instanceof` – Runtime type checking  
+- `this` – Refers to the current instance of a class  
+- `static` – Class-level properties and methods  
+- `final` – For constants, final classes, and methods  
+- `instanceof` – Runtime type checking  
 
 ---
 
@@ -177,10 +177,10 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-ObjectModeling-and-ClassDiagram`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-ObjectModeling-and-ClassDiagram)
 
 #### ✅ Concepts Covered:
-- 🧠 Object-Oriented Design Principles  
-- 📊 UML Class Diagrams – Show classes and their relationships  
-- 🧩 Object Diagrams – Depict instances at runtime  
-- 🔁 Sequence Diagrams – Visualize message flow between objects  
+- Object-Oriented Design Principles  
+- **UML Class Diagrams** – Show classes and their relationships  
+- **Object Diagrams** – Depict instances at runtime  
+- **Sequence Diagrams** – Visualize message flow between objects  
 
 ---
 
@@ -188,12 +188,12 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-Inheritance`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Inheritance)
 
 #### ✅ Concepts Covered:
-- 🔗 Inheritance – Code reuse between parent and child classes  
-- 📚 Single-Level, Multilevel, Hierarchical Inheritance  
-- ✨ Method Overriding – Redefining parent class methods  
-- 🛠️ Constructor Chaining – Using `super()`  
-- 🔀 Polymorphism via Inheritance  
-- 🛡️ Role of Access Modifiers in inheritance  
+- **Inheritance** – Code reuse between parent and child classes  
+- Single-Level, Multilevel, Hierarchical Inheritance  
+- **Method Overriding** – Redefining parent class methods  
+- **Constructor Chaining** – Using `super()`  
+- Polymorphism via Inheritance  
+- Role of Access Modifiers in inheritance  
 
 ---
 
@@ -201,10 +201,10 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 📁 [`Java-Encapsulation-Interface-AbstractClasses-and-Polymorphism`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS/Java-Encapsulation-Interface-AbstractClasses-and-Polymorphism)
 
 #### ✅ Concepts Covered:
-- 🧳 Encapsulation – Wrapping data with access methods  
-- 🌀 Polymorphism – Overriding, overloading, and dynamic dispatch  
-- 🔗 Interfaces – Contracts for implementation  
-- 🧩 Abstract Classes – Base classes with partial implementation  
+- **Encapsulation** – Wrapping data with access methods  
+- **Polymorphism** – Overriding, overloading, and dynamic dispatch  
+- **Interfaces** – Contracts for implementation  
+- **Abstract Classes** – Base classes with partial implementation  
 
 ---
 
@@ -212,12 +212,12 @@ During the **first two weeks** of BridgeLabz SIPP Training, I gained a strong fo
 
 From **23 June to 2 July**, I explored the core principles of **Object-Oriented Programming** in Java. Here's what I gained:
 
-- 🎯 Applied real-world modeling using **classes and objects**
-- 🔁 Reused and extended logic using **inheritance**
-- 🧳 Secured data with **encapsulation**
-- 🌀 Applied **polymorphism** for flexible method handling
-- 🔩 Designed using **abstract classes and interfaces**
-- 🗂️ Learned to read and create **UML diagrams** for better architecture visualization
+- Applied real-world modeling using **classes and objects**
+- Reused and extended logic using **inheritance**
+- Secured data with **encapsulation**
+- Applied **polymorphism** for flexible method handling
+- Designed using **abstract classes and interfaces**
+- Learned to read and create **UML diagrams** for better architecture visualization
 
 > 💡 These concepts strengthened my ability to write clean, modular, and scalable Java applications using industry-standard object-oriented practices.
 
@@ -233,11 +233,11 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 Create a rental system that supports renting different types of vehicles (Bike, Car, Truck) to customers and calculates rental fees based on the number of days.
 
 #### ✅ Concepts Used:
-- 🧱 Class Design: Vehicle (base), Car, Bike, Truck (subclasses), Customer
-- ⚙️ Constructors: Initialization logic for vehicle-specific rates
-- 🔐 Access Modifiers: `protected` fields to allow subclass inheritance
-- 🧩 Interface: `Rentable` interface for rental operations
-- ➗ Operators: Applied in rent calculation logic (`baseRate × days ± extras`)
+- **Class Design**: Vehicle (base), Car, Bike, Truck (subclasses), Customer
+- **Constructors**: Initialization logic for vehicle-specific rates
+- **Access Modifiers**: `protected` fields to allow subclass inheritance
+- **Interface**: `Rentable` interface for rental operations
+- **Operators**: Applied in rent calculation logic (`baseRate × days ± extras`)
 
 #### 💡 OOP Concepts Demonstrated:
 - **Abstraction**: `Rentable` interface abstracts rental calculation logic
@@ -250,9 +250,9 @@ Create a rental system that supports renting different types of vehicles (Bike, 
 ---
 
 ## 🛠 Upcoming Modules:
-- 🚀 More Workshop exercises
-- 📊 Data Structures & Algorithms in Java
-- 📚 Real-world projects & challenges
+- More Workshop exercises
+- Data Structures & Algorithms in Java
+- Real-world projects & challenges
 
 ---
 
