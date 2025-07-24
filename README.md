@@ -345,6 +345,119 @@ Minimize the number of food packages needed to distribute among people standing 
 
 ---
 
+### 📅 10 July – [Road Trip Fuel Stops – Minimize Refueling](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/RoadTripFuelStops-MinimizeRefueling)
+
+**📝 Objective:** Determine the minimum number of refueling stops required during a road trip, or return -1 if reaching the destination is not possible.
+
+#### 🚗 Scenario:
+You're on a road trip from City A to City B. Your car can travel **M km** on a full tank. Along the way, there are **fuel stations** located at known distances. Your goal is to reach your destination **with the fewest refueling stops**.
+
+#### 📌 Problem Statement:
+Given:
+- Total distance **D**
+- Fuel tank range **M**
+- Array `stations[]` containing distances of gas stations from City A (sorted)
+
+Return:
+- Minimum number of **refuels** required to reach destination, or **-1** if impossible
+
+#### ✅ Input:
+- Integer `D` — total distance
+- Integer `M` — max distance the car can travel per full tank
+- Array `stations[]` — sorted positions of gas stations
+
+#### 🎯 Output:
+- Minimum number of refuels to reach destination, or **-1** if not possible
+
+#### 🧠 Constraints:
+- `1 ≤ D ≤ 10^6`
+- `1 ≤ M ≤ 10^4`
+- `0 ≤ station[i] ≤ D`
+
+🔗 **Code Directory:** [Road Trip Fuel Stops – Minimize Refueling](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/RoadTripFuelStops-MinimizeRefueling)
+
+---
+
+### 📅 10 July – [Fractional Knapsack – Courier Package Optimization](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/FractionalKnapsack-CourierPackageOptimization)
+
+**📝 Objective:** Optimize package delivery for maximum profit using fractional knapsack strategy.
+
+#### 📦 Scenario:
+You are working for a courier company delivering packages across the city. Each package has a **weight** and **value (profit)**. Your delivery van has a **limited weight capacity**. You can choose to deliver **full or part of any package** to maximize the total profit.
+
+#### 📌 Problem Statement:
+Given:
+- `n` items with respective weights and values
+- Maximum capacity `W` of the knapsack (delivery van)
+
+You need to determine the **maximum profit** achievable by delivering packages (you may take fractional parts of packages).
+
+#### ✅ Input:
+- Integer `n` – number of items
+- Array `value[]` – profit for each item
+- Array `weight[]` – weight for each item
+- Integer `W` – capacity of the knapsack
+
+#### 🎯 Output:
+- Maximum value you can obtain in the knapsack (in **decimal format**)
+
+#### 🧠 Constraints:
+- `1 ≤ n ≤ 10^5`
+- `1 ≤ weight[i], value[i], W ≤ 10^4`
+
+🔗 **Code Directory:** [Fractional Knapsack – Courier Package Optimization](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/FractionalKnapsack-CourierPackageOptimization)
+
+---
+
+### 📅 10 July – [E-Commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/E-Commerce-Product-Catalog)
+
+**📝 Objective:** Implement a searchable product catalog using Binary Search Tree (BST) with search and suggestion capabilities.
+
+#### 🛒 Scenario:
+You are building a product catalog for an e-commerce platform where each product has a unique ID. The catalog is implemented as a **Binary Search Tree (BST)** where nodes store product IDs.
+
+You need to support two operations:
+1. Efficiently **search** if a product is available.
+2. **Suggest** the closest product ID if the searched ID does not exist.
+
+#### 📌 Problem Statement:
+Given a BST of `n` nodes (each node contains a unique product ID) and a list of `q` product IDs to search, write a function that:
+- Returns **"Available"** if the product exists.
+- Otherwise, returns the product ID that is **closest in value** to the one searched.
+
+🔁 If two values are equally close, return the **smaller one**.
+
+#### ✅ Input:
+- Integer `n` — number of products in the catalog
+- `n` integers — product IDs inserted into BST
+- Integer `q` — number of queries
+- `q` integers — product IDs to be searched
+
+#### 🎯 Output:
+For each query:
+- Print `"Available"` if the product ID exists
+- Or print the **closest ID** in the BST
+
+#### 🧠 Constraints:
+- `1 ≤ n, q ≤ 10^4`
+- Product IDs: `1 ≤ ID ≤ 10^9`
+
+#### 🧪 Example:
+
+**Input:**
+n = 5
+product IDs = [10, 5, 20, 2, 7]
+q = 2
+queries = [6, 20]
+
+**Output:**
+5
+Available
+
+🔗 **Code Directory:** [E-Commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/E-Commerce-Product-Catalog)
+
+---
+
 ## 🛠 Upcoming Modules:
 - More Workshop exercises
 - Data Structures & Algorithms in Java
