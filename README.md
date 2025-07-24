@@ -227,25 +227,48 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 📁 Branch: [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop)
 
+---
+
 ### 📅 8 July – [Vehicle Rental Application Scenario](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/Vehicle-Rental-Application-Scenario)
 
 **📝 Objective:**  
 Create a rental system that supports renting different types of vehicles (Bike, Car, Truck) to customers and calculates rental fees based on the number of days.
 
 #### ✅ Concepts Used:
-- **Class Design**: Vehicle (base), Car, Bike, Truck (subclasses), Customer
-- **Constructors**: Initialization logic for vehicle-specific rates
-- **Access Modifiers**: `protected` fields to allow subclass inheritance
-- **Interface**: `Rentable` interface for rental operations
-- **Operators**: Applied in rent calculation logic (`baseRate × days ± extras`)
+- **Class Design:** Vehicle (base), Car, Bike, Truck (subclasses), Customer
+- **Constructors:** Initialization logic for vehicle-specific rates
+- **Access Modifiers:** `protected` fields to allow subclass inheritance
+- **Interface:** `Rentable` interface for rental operations
+- **Operators:** Applied in rent calculation logic (`baseRate × days ± extras`)
 
 #### 💡 OOP Concepts Demonstrated:
-- **Abstraction**: `Rentable` interface abstracts rental calculation logic
-- **Inheritance**: All vehicle types inherit from a base `Vehicle` class
-- **Polymorphism**: `calculateRent()` is implemented differently by each vehicle
-- **Encapsulation**: Fields are kept private and accessed through setters/getters
+- **Abstraction:** `Rentable` interface abstracts rental calculation logic
+- **Inheritance:** All vehicle types inherit from a base `Vehicle` class
+- **Polymorphism:** `calculateRent()` is implemented differently by each vehicle
+- **Encapsulation:** Fields are kept private and accessed through setters/getters
 
 🔗 Code Directory: [Vehicle Rental App](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/Vehicle-Rental-Application-Scenario)
+
+---
+
+### 📅 10 July - [Mini Project: E-commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MiniProject-E-Commerce-Product-Catalog)
+
+**Objective:** 
+Console-based Java application to manage products for an online store.
+
+#### ✅ Features Implemented:
+- **POJO Classes:** `Product` and `Customer`
+- Use of `HashMap` for fast product lookup by ID
+- **Searching & Sorting:** By name, category, price
+- **Two-pointer approach:** Find product pairs matching a customer’s budget
+- **Full OOP usage:**
+  - **Encapsulation:** private fields with accessors
+  - **Inheritance:** Product inherits from an abstract `Item` base class
+  - **Abstraction:** Searchable interface
+  - **Polymorphism:** Method overrides in derived classes
+
+🔗 Code Directory: [E-commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MiniProject-E-Commerce-Product-Catalog)
+
 
 ---
 
