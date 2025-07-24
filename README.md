@@ -223,7 +223,7 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ---
 
-## 📙 Workshop & Scenario-Based Coding (8 July – ongoing)
+## 📙 Workshop & Scenario-Based Coding (8 July & 10 July)
 
 📁 Branch: [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop)
 
@@ -465,9 +465,8 @@ Available
 ---
 
 ## 🛠 Upcoming Modules:
-- More Workshop exercises
 - Data Structures & Algorithms in Java
-- Real-world projects & challenges
+- Generics and Collections in Java
 
 ---
 
@@ -514,7 +513,7 @@ BridgeLabz-SIPP-Training/
 ---
 
 ### Created By:
-*[Prashant Bansal]*  
- Under The Guidance of **Namrata Salve**
+**[Prashant Bansal]**  
+Under The Guidance of **Namrata Salve**
 
 ---
