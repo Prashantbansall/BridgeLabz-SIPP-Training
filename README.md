@@ -270,7 +270,7 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ---
 
-### 📅 10 July – [Activity Selection Problem – Meeting Room Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+### 📅 10 July – [Activity Selection Problem – Meeting Room Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/ActivitySelectionProblem-MeetingRoomScheduler)
 
 **📝 Objective:** Maximize the number of non-overlapping meetings scheduled in a single meeting room given their start and end times.
 
@@ -290,7 +290,7 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 - 1 ≤ n ≤ 10⁵
 - 0 ≤ start[i], end[i] ≤ 10⁹
 
-🔗 Code Directory: [Meeting Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+🔗 Code Directory: [Meeting Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/ActivitySelectionProblem-MeetingRoomScheduler)
 
 ---
 
