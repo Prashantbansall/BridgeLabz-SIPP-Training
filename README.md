@@ -231,8 +231,7 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ### 📅 8 July – [Vehicle Rental Application Scenario](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/Vehicle-Rental-Application-Scenario)
 
-**📝 Objective:**  
-Create a rental system that supports renting different types of vehicles (Bike, Car, Truck) to customers and calculates rental fees based on the number of days.
+**📝 Objective:**  Create a rental system that supports renting different types of vehicles (Bike, Car, Truck) to customers and calculates rental fees based on the number of days.
 
 #### ✅ Concepts Used:
 - **Class Design:** Vehicle (base), Car, Bike, Truck (subclasses), Customer
@@ -253,8 +252,7 @@ Create a rental system that supports renting different types of vehicles (Bike, 
 
 ### 📅 10 July - [Mini Project: E-commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MiniProject-E-Commerce-Product-Catalog)
 
-**Objective:** 
-Console-based Java application to manage products for an online store.
+**Objective:** Console-based Java application to manage products for an online store.
 
 #### ✅ Features Implemented:
 - **POJO Classes:** `Product` and `Customer`
