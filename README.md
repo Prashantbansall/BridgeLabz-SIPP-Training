@@ -294,6 +294,29 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ---
 
+### 📅 10 July – [Movie Marathon – Maximum Non-Overlapping Movies](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+
+**📝 Scenario:**  
+You are planning a movie marathon and want to watch as many full movies as possible in a day. Each movie has a fixed start and end time, and you cannot watch two movies that overlap in time.
+
+#### ✅ Problem Statement:
+Given `n` movies with their start and end times, write a function to select the **maximum number of non-overlapping movies** you can watch from start to end of the day.
+
+#### 📥 Input:
+- Integer `n` — number of movies  
+- Array of `n` pairs — each pair contains the start and end time of a movie
+
+#### 📤 Output:
+- Maximum number of movies that can be watched without overlap
+
+#### 📌 Constraints:
+- `1 ≤ n ≤ 10^5`  
+- `0 ≤ start[i], end[i] ≤ 10^9`
+
+🔗 Code Directory: [Movie Marathon – Max Non-Overlapping](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+
+---
+
 ## 🛠 Upcoming Modules:
 - More Workshop exercises
 - Data Structures & Algorithms in Java
