@@ -270,6 +270,30 @@ From **23 June to 2 July**, I explored the core principles of **Object-Oriented 
 
 ---
 
+### 📅 10 July – [Activity Selection Problem – Meeting Room Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+
+**📝 Objective:** Maximize the number of non-overlapping meetings scheduled in a single meeting room given their start and end times.
+
+#### ✅ Problem Details:
+- **Input:**
+  - `n`: number of meetings
+  - `start[]`, `end[]`: arrays of start and end times
+- **Output:** Maximum number of non-overlapping meetings
+
+#### 💡 Key Concepts Used:
+- **Greedy Algorithm:** Sort meetings by end time and pick those that don’t overlap
+- **Custom Class:** `Meeting` class for structured storage
+- **Sorting with Comparator:** Meetings sorted by end time
+- **Efficient Logic:** Linear iteration using a greedy check
+
+#### 📌 Constraints:
+- 1 ≤ n ≤ 10⁵
+- 0 ≤ start[i], end[i] ≤ 10⁹
+
+🔗 Code Directory: [Meeting Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MovieMarathon-Maximum-NonOverlapping-Movies)
+
+---
+
 ## 🛠 Upcoming Modules:
 - More Workshop exercises
 - Data Structures & Algorithms in Java
