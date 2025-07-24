@@ -317,6 +317,34 @@ Given `n` movies with their start and end times, write a function to select the 
 
 ---
 
+### 📅 10 July – [Distribute Food Packages – Minimum Volunteers](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/DistributeFoodPackages-Minimum-Volunteers)
+
+**📝 Objective:**  
+Minimize the number of food packages needed to distribute among people standing in a line, ensuring each person gets at least one package and those with higher hunger ratings than their neighbors get more.
+
+#### ✅ Concepts Used:
+- **Greedy Algorithm:** Assign minimum packages based on local comparisons
+- **Two-Pass Strategy:** Left-to-right and right-to-left traversal to satisfy both neighbor constraints
+- **Array Manipulation:** Efficient updates using linear iteration
+- **Edge Case Handling:** Uniform hunger levels, strictly increasing/decreasing
+
+#### 💡 Problem Solving Approach:
+- **Step 1:** Initialize all packages to 1 (minimum requirement)
+- **Step 2:** Traverse from left to right, increasing package count if hunger increases
+- **Step 3:** Traverse from right to left, ensuring higher hunger still gets more packages
+- **Step 4:** Sum the final package array to get the result
+
+#### 📦 Input:
+- `n` – number of people
+- `hunger[]` – hunger levels of each person
+
+#### 📤 Output:
+- Minimum number of food packages required
+
+🔗 Code Directory: [DistributeFoodPackages-Minimum-Volunteers](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/DistributeFoodPackages-Minimum-Volunteers)
+
+---
+
 ## 🛠 Upcoming Modules:
 - More Workshop exercises
 - Data Structures & Algorithms in Java
