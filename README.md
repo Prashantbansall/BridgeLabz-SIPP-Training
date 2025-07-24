@@ -471,6 +471,50 @@ Available
 
 ---
 
-Thank you for visiting! Happy coding 🚀
+## 📂 Folder Structure (Branch-wise)
+
+```
+BridgeLabz-SIPP-Training/
+│
+├── Core-Java/
+│   ├── Java-Programming-Elements/
+│   ├── Java-Control-Flows/
+│   ├── Java-Arrays/
+│   ├── Java-Methods/
+│   ├── Java-Strings/
+│   ├── Java-Built-in-Function/
+│   ├── Java-StringsHandling/
+│
+├── OOPS/
+│   ├── Java-Classes-and-Objects/         
+│   ├── Java-Constructors-InstanceVariables-VS-ClassVariables-AccessModifiers/              
+│   ├── Java-this-static-final-Keywords-and-instanceof-Operators/              
+│   ├── Java-ObjectModeling-and-ClassDiagram/
+│   ├── Java-Inheritance/
+│   ├── Java-Encapsulation-Interface-AbstractClasses-and-Polymorphism/
+│   
+├── Workshop/
+│   ├── Vehicle-Rental-Application-Scenario/
+│   ├── MiniProject-E-Commerce-Product-Catalog/
+│   ├── ActivitySelectionProblem-MeetingRoomScheduler/
+|   ├── MovieMarathon-Maximum-NonOverlapping-Movies/
+|   ├── DistributeFoodPackages-Minimum-Volunteers/
+|   ├── RoadTripFuelStops-MinimizeRefueling
+|   ├── FractionalKnapsack-CourierPackageOptimization/
+|   ├── E-Commerce-Product-Catalog/
+|
+├── Dsa/
+│   |── LinearAndBinarySearch
+│   ├── Linkedlist
+│   └── Sorting
+|   └── StackQueueHashMap
+    └── BigONotation
+```
+
+---
+
+### Created By:
+*[Prashant Bansal]*  
+ Under The Guidance of **Namrata Salve**
 
 ---
