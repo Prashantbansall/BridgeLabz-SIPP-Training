@@ -253,7 +253,8 @@ Create a rental system that supports renting different types of vehicles (Bike, 
 
 ### 📅 10 July - [Mini Project: E-commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/MiniProject-E-Commerce-Product-Catalog)
 
-**Objective:** Console-based Java application to manage products for an online store.
+**📝 Objective:** 
+Console-based Java application to manage products for an online store.
 
 #### ✅ Features Implemented:
 - **POJO Classes:** `Product` and `Customer`
@@ -273,7 +274,8 @@ Create a rental system that supports renting different types of vehicles (Bike, 
 
 ### 📅 10 July – [Activity Selection Problem – Meeting Room Scheduler](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/ActivitySelectionProblem-MeetingRoomScheduler)
 
-**📝 Objective:** Maximize the number of non-overlapping meetings scheduled in a single meeting room given their start and end times.
+**📝 Objective:** 
+Maximize the number of non-overlapping meetings scheduled in a single meeting room given their start and end times.
 
 #### ✅ Problem Details:
 - **Input:**
@@ -348,7 +350,8 @@ Minimize the number of food packages needed to distribute among people standing 
 
 ### 📅 10 July – [Road Trip Fuel Stops – Minimize Refueling](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/RoadTripFuelStops-MinimizeRefueling)
 
-**📝 Objective:** Determine the minimum number of refueling stops required during a road trip, or return -1 if reaching the destination is not possible.
+**📝 Objective:** 
+Determine the minimum number of refueling stops required during a road trip, or return -1 if reaching the destination is not possible.
 
 #### 🚗 Scenario:
 You're on a road trip from City A to City B. Your car can travel **M km** on a full tank. Along the way, there are **fuel stations** located at known distances. Your goal is to reach your destination **with the fewest refueling stops**.
@@ -381,7 +384,8 @@ Return:
 
 ### 📅 10 July – [Fractional Knapsack – Courier Package Optimization](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/FractionalKnapsack-CourierPackageOptimization)
 
-**📝 Objective:** Optimize package delivery for maximum profit using fractional knapsack strategy.
+**📝 Objective:** 
+Optimize package delivery for maximum profit using fractional knapsack strategy.
 
 #### 📦 Scenario:
 You are working for a courier company delivering packages across the city. Each package has a **weight** and **value (profit)**. Your delivery van has a **limited weight capacity**. You can choose to deliver **full or part of any package** to maximize the total profit.
@@ -412,7 +416,8 @@ You need to determine the **maximum profit** achievable by delivering packages (
 
 ### 📅 10 July – [E-Commerce Product Catalog](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop/E-Commerce-Product-Catalog)
 
-**📝 Objective:** Implement a searchable product catalog using Binary Search Tree (BST) with search and suggestion capabilities.
+**📝 Objective:** 
+Implement a searchable product catalog using Binary Search Tree (BST) with search and suggestion capabilities.
 
 #### 🛒 Scenario:
 You are building a product catalog for an e-commerce platform where each product has a unique ID. The catalog is implemented as a **Binary Search Tree (BST)** where nodes store product IDs.
