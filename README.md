@@ -13,7 +13,7 @@ This repository contains categorized Java programming concepts, hands-on assignm
 | [`Core-Java`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Core-Java) | Covers foundational Java concepts like variables, control flows, data types, loops, arrays, strings, methods, and more |
 | [`OOPS`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/OOPS) | Covers object-oriented programming principles including classes, inheritance, polymorphism, interfaces, design diagrams and more |
 | [`Workshop`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/Workshop) | Hands-on scenario-based exercises, code challenges, and mini-projects to apply Java concepts in real-world simulations |
-| `DSA` | Data Structures and Algorithms using Java (coming soon) |
+| [`DSA`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA) | Covers essential data structures and algorithms like linked lists, stacks, queues, sorting, searching, hashing, and runtime analysis |
 | `Generics&Collections` | Generics and Collections in Java (coming soon) |
 
 ---
@@ -464,8 +464,112 @@ Available
 
 ---
 
+## 📆 Week 5 & 6: Data Structures and Algorithms (DSA)
+> **Branch:** [`DSA`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA)  
+> **Duration:** *03 July – 20 July*
+
+---
+
+### 🗓️ 01 – LinkedList (03 July)  
+📁 [`LinkedList`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/LinkedList)
+
+#### ✅ Concepts Covered:
+- **Single Linked List:** Linear node-based structure with one pointer to the next node.
+- **Doubly Linked List:** Each node stores references to both previous and next nodes.
+- **Circular Linked List:** Last node points back to the head, forming a looped list.
+
+---
+
+### 🗓️ 02 – Stack, Queue, HashMap and Hashing Function (07 July)
+
+📁 [`Stack`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Stack)  
+#### ✅ Concepts Covered:
+- **LIFO Principle (Last In First Out)**  
+- `push()`, `pop()`, and `peek()` operations  
+- Stack implementation using array and LinkedList  
+- Use cases in function calls, undo features, etc.
+
+📁 [`Queue`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Queue)  
+#### ✅ Concepts Covered:
+- **FIFO Principle (First In First Out)**  
+- Enqueue, Dequeue, Front, Rear operations  
+- Queue using LinkedList and Array  
+- Real-world examples like printer queue, scheduling
+
+📁 [`HashMap-and-HashingFunction`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/HashMap-and-HashingFunction)  
+#### ✅ Concepts Covered:
+- Key-value mapping with constant time access  
+- Hashing techniques for collision handling  
+- Java's `HashMap`, `put()`, `get()`  
+- Use cases: Dictionary, caching
+
+---
+
+### 🗓️ 03 – Sorting (09 July)  
+📁 [`Sorting`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Sorting)
+
+#### ✅ Concepts Covered:
+- **Bubble Sort** – Repeated adjacent swaps for ordering  
+- **Insertion Sort** – Efficient for nearly sorted arrays  
+- **Merge Sort** – Divide and conquer approach  
+- **Quick Sort** – Fast in practice using pivot-based partitioning
+
+---
+
+### 🗓️ 04 – Linear Search and Binary Search (10 July)
+
+📁 [`Linear-Search`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Linear-Search)  
+#### ✅ Concepts Covered:
+- Sequentially scan each element  
+- Works on both sorted/unsorted arrays  
+- Simple but slower for large data
+
+📁 [`Binary-Search`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Binary-Search)  
+#### ✅ Concepts Covered:
+- Divide and conquer algorithm  
+- Search in sorted arrays  
+- Logarithmic time complexity `O(log n)`
+
+---
+
+### 🗓️ 05 – StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader (10 July) 
+
+📁 [`StringBuilder`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/StringBuilder)  
+#### ✅ Concepts Covered:
+- Mutable strings for performance  
+- `append()`, `insert()`, `reverse()` etc.  
+- Non-thread-safe, faster than `StringBuffer`
+
+📁 [`StringBuffer`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/StringBuffer)  
+#### ✅ Concepts Covered:
+- Thread-safe version of `StringBuilder`  
+- Slower but safe in multithreaded environment
+
+📁 [`FileReader`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/FileReader)  
+#### ✅ Concepts Covered:
+- Reading characters from file  
+- Basic file I/O operations in Java
+
+📁 [`InputStreamReader`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/InputStreamReader)  
+#### ✅ Concepts Covered:
+- Converts byte stream to character stream  
+- Often used with `System.in` for user input
+
+---
+
+### 🗓️ 06 – Algorithm's Runtime Analysis & Big-O Notation (11 July)  
+📁 [`Algorithms-Runtime-Analysis-and-Big-O-Notation`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Algorithms-Runtime-Analysis-and-Big-O-Notation)
+
+#### ✅ Concepts Covered:
+- **Runtime Analysis** – Evaluate performance of algorithms  
+- **Big-O Notation** – Worst-case time complexity  
+- **Time & Space Complexity** – Optimize resource usage  
+- **Best, Worst, Average Cases**  
+- Real-life examples and coding practices
+
+---
+
 ## 🛠 Upcoming Modules:
-- Data Structures & Algorithms in Java
 - Generics and Collections in Java
 
 ---
@@ -503,11 +607,19 @@ BridgeLabz-SIPP-Training/
 |   ├── E-Commerce-Product-Catalog/
 |
 ├── Dsa/
-│   |── LinearAndBinarySearch
-│   ├── Linkedlist
-│   └── Sorting
-|   └── StackQueueHashMap
-    └── BigONotation
+│   |── LinkedList
+│   ├── Stack
+│   |── Queue
+|   |── HashMap-and-HashingFunction
+|   |── Sorting
+|   |── Linear-Search
+|   |── Binary-Search
+|   |── StringBuilder
+|   |── StringBuffer
+|   |── FileReader
+|   |── InputStreamReader
+|   |── Algorithms-Runtime-Analysis-and-Big-O-Notation
+
 ```
 
 ---
