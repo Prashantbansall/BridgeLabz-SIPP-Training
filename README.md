@@ -569,6 +569,49 @@ Available
 
 ---
 
+## 🧠 Summary: What I Learned (03 July – 20 July)
+
+Over the course of two weeks, I explored the **core foundations of Data Structures and Algorithms (DSA)** using Java. Here's a breakdown of key concepts and skills I gained:
+
+###  Linked Lists
+- Implemented **Singly**, **Doubly**, and **Circular Linked Lists**
+- Learned how to insert, delete, and traverse nodes
+- Understood internal memory management and pointer references
+
+###  Stack & Queue
+- Practiced **Stack (LIFO)** using both arrays and linked lists
+- Built **Queues (FIFO)** including Circular and Deque variations
+- Applied use cases like expression evaluation, undo features, and task scheduling
+
+###  HashMap & Hashing
+- Created and manipulated key-value mappings using `HashMap`
+- Implemented custom **hash functions** for efficient data retrieval
+- Understood collisions and load factors
+
+###  Sorting Techniques
+- Implemented and compared **Bubble**, **Insertion**, **Merge**, and **Quick Sort**
+- Analyzed the time and space complexity of each algorithm
+- Applied real-time sorting examples to solidify logic
+
+###  Searching Algorithms
+- Implemented **Linear Search** and **Binary Search**
+- Practiced searching in unsorted vs. sorted arrays
+- Used recursion and iterative approaches for binary search
+
+###  Strings and Input/Output Handling
+- Used `StringBuilder` and `StringBuffer` for efficient string manipulation
+- Learned file reading using `BufferedReader`, `FileReader`, and `InputStreamReader`
+- Practiced reading user inputs and processing files in Java
+
+### ⏱ Big-O and Algorithm Analysis
+- Learned to evaluate **runtime performance**
+- Understood **Big-O Notation** and how to calculate time/space complexity
+- Compared algorithms based on best, average, and worst cases
+
+> 💡 **Overall**, I developed a strong foundation in solving real-world problems using DSA concepts in Java, preparing me for algorithm-based coding rounds and efficient application development.
+
+---
+
 ## 🛠 Upcoming Modules:
 - Generics and Collections in Java
 
