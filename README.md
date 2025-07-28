@@ -649,7 +649,7 @@ BridgeLabz-SIPP-Training/
 |   ├── FractionalKnapsack-CourierPackageOptimization/
 |   ├── E-Commerce-Product-Catalog/
 |
-├── Dsa/
+├── DSA/
 │   |── LinkedList
 │   ├── Stack
 │   |── Queue
