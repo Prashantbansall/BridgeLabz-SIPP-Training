@@ -514,6 +514,6 @@ BridgeLabz-SIPP-Training/
 
 ### Created By:
 **[Prashant Bansal]**  
-Under The Guidance of **Namrata Salve**
+Under The Guidance of **Ms. Namrata Salve**
 
 ---
