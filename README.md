@@ -569,6 +569,18 @@ Available
 
 ---
 
+### 🗓️ 07 – Scenario Based Problems 
+📁 [`Scenario-Based-Problems`](https://github.com/Prashantbansall/BridgeLabz-SIPP-Training/tree/DSA/Scenario-Based-Problems)
+
+#### ✅ Concepts Covered:
+- Real-world DSA challenges
+- Applying sorting, searching, and data structures under constraints
+- Problem-solving using greedy strategies, two-pointer, and priority queues
+- Implementation of optimal scheduling and distribution algorithms
+- Enhancing code modularity, readability, and testability in DSA scenarios
+
+---
+
 ## 🧠 Summary: What I Learned (03 July – 20 July)
 
 Over the course of two weeks, I explored the **core foundations of Data Structures and Algorithms (DSA)** using Java. Here's a breakdown of key concepts and skills I gained:
@@ -662,6 +674,7 @@ BridgeLabz-SIPP-Training/
 |   |── FileReader
 |   |── InputStreamReader
 |   |── Algorithms-Runtime-Analysis-and-Big-O-Notation
+|   |── Scenario-Based-Problems
 
 ```
 
