@@ -3,31 +3,25 @@ import java.util.*;
 
 public class WordFrequencyCounter {
     public static void main(String[] args) {
-        // Change this to your file path
-        String fileName = "input.txt"; 
+        // Sample text (replace with file reading if needed)
+        String text = "Hello world, hello Java!";
 
+        // Convert to lowercase and remove punctuation
+        text = text.toLowerCase().replaceAll("[^a-z\\s]", "");
+
+        // Split into words
+        String[] words = text.split("\\s+");
+
+        // Use HashMap to count frequency
         Map<String, Integer> wordCount = new HashMap<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                // Remove punctuation, convert to lowercase
-                line = line.replaceAll("[^a-zA-Z ]", "").toLowerCase();
-
-                // Split into words
-                String[] words = line.split("\\s+");
-
-                for (String word : words) {
-                    if (!word.isEmpty()) {
-                        wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
-                    }
-                }
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
             }
-        } catch (IOException e) {
-            System.out.println("Error reading file: " + e.getMessage());
         }
 
-        // Print word frequencies
-        System.out.println("Word Frequencies: " + wordCount);
+        // Print result
+        System.out.println(wordCount);
     }
 }
