@@ -1,26 +1,32 @@
 import java.util.*;
 
 public class InvertMap {
-    public static void main(String[] args) {
-        // Original map
-        Map<String, Integer> originalMap = new HashMap<>();
-        originalMap.put("A", 1);
-        originalMap.put("B", 2);
-        originalMap.put("C", 1);
+    public static <K, V> Map<V, List<K>> invertMap(Map<K, V> originalMap) {
+        Map<V, List<K>> invertedMap = new HashMap<>();
 
-        // Inverted map
-        Map<Integer, List<String>> invertedMap = new HashMap<>();
+        for (Map.Entry<K, V> entry : originalMap.entrySet()) {
+            V value = entry.getValue();
+            K key = entry.getKey();
 
-        for (Map.Entry<String, Integer> entry : originalMap.entrySet()) {
-            String key = entry.getKey();
-            Integer value = entry.getValue();
-
-            // If value already exists, append to list
-            invertedMap.computeIfAbsent(value, k -> new ArrayList<>()).add(key);
+            // Add key into the list of keys for the value
+            invertedMap.putIfAbsent(value, new ArrayList<>());
+            invertedMap.get(value).add(key);
         }
 
-        // Print results
-        System.out.println("Original Map: " + originalMap);
-        System.out.println("Inverted Map: " + invertedMap);
+        return invertedMap;
+    }
+
+    public static void main(String[] args) {
+        // Example Input
+        Map<String, Integer> original = new HashMap<>();
+        original.put("A", 1);
+        original.put("B", 2);
+        original.put("C", 1);
+
+        // Invert the map
+        Map<Integer, List<String>> result = invertMap(original);
+
+        // Print the result
+        System.out.println(result);
     }
 }
