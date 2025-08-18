@@ -1,73 +1,59 @@
 import java.util.*;
 
+class WithdrawalRequest {
+    int accountNumber;
+    double amount;
+
+    public WithdrawalRequest(int accountNumber, double amount) {
+        this.accountNumber = accountNumber;
+        this.amount = amount;
+    }
+}
+
 public class BankingSystem {
-    private Map<Integer, Double> accounts = new HashMap<>();
-    private TreeMap<Double, List<Integer>> sortedAccounts = new TreeMap<>(Collections.reverseOrder());
-    private Queue<WithdrawalRequest> withdrawalQueue = new LinkedList<>();
+    public static void main(String[] args) {
+        // HashMap to store accounts
+        HashMap<Integer, Double> accounts = new HashMap<>();
+        accounts.put(101, 5000.0);
+        accounts.put(102, 3000.0);
+        accounts.put(103, 7000.0);
+        accounts.put(104, 2000.0);
 
-    static class WithdrawalRequest {
-        int accountNumber;
-        double amount;
+        System.out.println("Accounts (HashMap): " + accounts);
 
-        WithdrawalRequest(int accountNumber, double amount) {
-            this.accountNumber = accountNumber;
-            this.amount = amount;
+        // TreeMap to sort customers by balance
+        TreeMap<Double, Integer> sortedByBalance = new TreeMap<>();
+        for (Map.Entry<Integer, Double> entry : accounts.entrySet()) {
+            sortedByBalance.put(entry.getValue(), entry.getKey());
         }
+        System.out.println("Accounts (TreeMap - sorted by balance): " + sortedByBalance);
+
+        // Queue to process withdrawal requests
+        Queue<WithdrawalRequest> withdrawalQueue = new LinkedList<>();
+        withdrawalQueue.add(new WithdrawalRequest(101, 1000));
+        withdrawalQueue.add(new WithdrawalRequest(102, 500));
+        withdrawalQueue.add(new WithdrawalRequest(103, 2000));
+
+        processWithdrawals(accounts, withdrawalQueue);
+
+        System.out.println("Final Account Balances: " + accounts);
     }
 
-    public void addAccount(int accountNumber, double balance) {
-        accounts.put(accountNumber, balance);
-        sortedAccounts.computeIfAbsent(balance, k -> new ArrayList<>()).add(accountNumber);
-    }
-
-    public void queueWithdrawal(int accountNumber, double amount) {
-        withdrawalQueue.offer(new WithdrawalRequest(accountNumber, amount));
-    }
-
-    public void processWithdrawals() {
+    // Process withdrawal requests
+    public static void processWithdrawals(HashMap<Integer, Double> accounts, Queue<WithdrawalRequest> withdrawalQueue) {
         while (!withdrawalQueue.isEmpty()) {
             WithdrawalRequest request = withdrawalQueue.poll();
-            double currentBalance = accounts.getOrDefault(request.accountNumber, -1.0);
-            if (currentBalance >= request.amount) {
-                updateBalance(request.accountNumber, currentBalance - request.amount);
-                System.out.println("Withdrawal successful: " + request.accountNumber + " -> " + request.amount);
+            if (accounts.containsKey(request.accountNumber)) {
+                double currentBalance = accounts.get(request.accountNumber);
+                if (currentBalance >= request.amount) {
+                    accounts.put(request.accountNumber, currentBalance - request.amount);
+                    System.out.println("Withdrawal of " + request.amount + " from Account " + request.accountNumber + " successful.");
+                } else {
+                    System.out.println("Insufficient balance in Account " + request.accountNumber);
+                }
             } else {
-                System.out.println("Insufficient funds: " + request.accountNumber);
+                System.out.println("Account " + request.accountNumber + " not found!");
             }
         }
-    }
-
-    private void updateBalance(int accountNumber, double newBalance) {
-        double oldBalance = accounts.get(accountNumber);
-        accounts.put(accountNumber, newBalance);
-        sortedAccounts.get(oldBalance).remove((Integer) accountNumber);
-        if (sortedAccounts.get(oldBalance).isEmpty()) sortedAccounts.remove(oldBalance);
-        sortedAccounts.computeIfAbsent(newBalance, k -> new ArrayList<>()).add(accountNumber);
-    }
-
-    public void printSortedAccounts() {
-        for (Map.Entry<Double, List<Integer>> entry : sortedAccounts.entrySet()) {
-            for (int accNum : entry.getValue()) {
-                System.out.println("Account: " + accNum + ", Balance: " + entry.getKey());
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        BankingSystem bank = new BankingSystem();
-        bank.addAccount(101, 5000);
-        bank.addAccount(102, 3000);
-        bank.addAccount(103, 7000);
-        bank.addAccount(104, 3000);
-
-        bank.queueWithdrawal(101, 1500);
-        bank.queueWithdrawal(102, 4000);
-        bank.queueWithdrawal(103, 2000);
-        bank.queueWithdrawal(104, 1000);
-
-        bank.processWithdrawals();
-
-        System.out.println("Sorted Accounts:");
-        bank.printSortedAccounts();
     }
 }
