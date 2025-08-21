@@ -1,4 +1,4 @@
-Q3.
+Q1. Online Quiz Timer
 CLASS Patient
     ATTRIBUTE id
     ATTRIBUTE name
@@ -50,4 +50,5 @@ MAIN
 
     manager.deletePatient(1)
 END MAIN
+
 
