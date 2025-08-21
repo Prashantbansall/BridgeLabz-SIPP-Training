@@ -1,0 +1,53 @@
+Q3.
+CLASS Patient
+    ATTRIBUTE id
+    ATTRIBUTE name
+    ATTRIBUTE age
+
+    METHOD constructor(id, name, age)
+        this.id ← id
+        this.name ← name
+        this.age ← age
+    END METHOD
+END CLASS
+
+CLASS PatientRecordManager
+    ATTRIBUTE recordMap : HashMap<id, Patient>
+
+    METHOD constructor()
+        recordMap ← empty HashMap
+    END METHOD
+
+    METHOD addPatient(patient)
+        recordMap[patient.id] ← patient
+    END METHOD
+
+    METHOD getPatient(id)
+        RETURN recordMap[id]
+    END METHOD
+
+    METHOD updatePatient(id, newName, newAge)
+        IF id IN recordMap THEN
+            recordMap[id].name <- newName
+            recordMap[id].age <- newAge
+        END IF
+    END METHOD
+
+    METHOD deletePatient(id)
+        REMOVE recordMap[id]
+    END METHOD
+END CLASS
+
+MAIN
+    manager <- new PatientRecordManager()
+    manager.addPatient( Patient(1, "Aman", 25) )
+    manager.addPatient( Patient(2, "Jatin", 30) )
+
+    p ← manager.getPatient(1)
+    PRINT "Patient Found: " + p.name
+
+    manager.updatePatient(2, "Jatin Sharma", 31)
+
+    manager.deletePatient(1)
+END MAIN
+
