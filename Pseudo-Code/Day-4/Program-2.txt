@@ -1,0 +1,32 @@
+Q2. Crime Prediction Heatmap
+
+DATA STRUCTURE:
+Graph {
+    adjacencyList[zone]
+    crimeScore[zone]
+}
+threshold = predefined risk score
+
+FUNCTION DFS(zone, visited, cluster, graph):
+    Mark zone as visited
+    Add zone to cluster
+    FOR each neighbor in graph.adjacencyList[zone]:
+        IF neighbor NOT visited AND graph.crimeScore[neighbor] >= threshold:
+            DFS(neighbor, visited, cluster, graph)
+
+FUNCTION findHighRiskAreas(graph):
+    visited = empty set
+    highRiskClusters = []
+
+    FOR each zone in graph:
+        IF zone NOT visited AND graph.crimeScore[zone] >= threshold:
+            cluster = []
+            DFS(zone, visited, cluster, graph)
+            highRiskClusters.append(cluster)
+
+    RETURN highRiskClusters
+
+MAIN:
+    Input city zones + adjacency + crime data
+    highRiskAreas = findHighRiskAreas(graph)
+    Output highRiskAreas (heatmap clusters)
