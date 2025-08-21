@@ -1,0 +1,50 @@
+Q1. Flight Price Analyzer
+
+DATA STRUCTURE:
+Flight {
+    price
+    duration
+}
+
+FUNCTION compareFlights(f1, f2):
+    IF f1.price < f2.price:
+        RETURN -1
+    ELSE IF f1.price > f2.price:
+        RETURN 1
+    ELSE:
+        IF f1.duration < f2.duration:
+            RETURN -1
+        ELSE IF f1.duration > f2.duration:
+            RETURN 1
+        ELSE:
+            RETURN 0
+
+FUNCTION mergeSort(flights[], left, right):
+    IF left < right:
+        mid = (left + right) / 2
+        mergeSort(flights, left, mid)
+        mergeSort(flights, mid+1, right)
+        merge(flights, left, mid, right)
+
+FUNCTION merge(flights[], left, mid, right):
+    Create temp arrays L and R
+    Copy flights[left..mid] into L
+    Copy flights[mid+1..right] into R
+
+    i = 0, j = 0, k = left
+    WHILE i < length(L) AND j < length(R):
+        IF compareFlights(L[i], R[j]) <= 0:
+            flights[k] = L[i]
+            i++
+        ELSE:
+            flights[k] = R[j]
+            j++
+        k++
+
+    Copy remaining elements of L (if any)
+    Copy remaining elements of R (if any)
+
+MAIN:
+    Input: flights[]
+    Call mergeSort(flights, 0, n-1)
+    Output: sorted flights[]
