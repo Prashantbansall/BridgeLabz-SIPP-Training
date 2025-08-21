@@ -1,4 +1,4 @@
-Q2. Job Scheduler
+Q2. Maze Solver Bot
 
 CLASS MazeSolver
     METHOD solveMaze(maze, x, y, solution)
@@ -49,5 +49,6 @@ MAIN
         PRINT "No path found!"
     END IF
 END MAIN
+
 
 
