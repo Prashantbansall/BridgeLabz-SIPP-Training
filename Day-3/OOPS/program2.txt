@@ -1,0 +1,65 @@
+Q2.Medical Record Manager
+
+INTERFACE Searchable
+    METHOD search(keyword)
+END INTERFACE
+
+INTERFACE Printable
+    METHOD print()
+END INTERFACE
+
+CLASS LabReport IMPLEMENTS Searchable, Printable
+    ATTRIBUTE patientName
+    ATTRIBUTE testResults
+
+    METHOD constructor(patientName, testResults)
+        this.patientName <- patientName
+        this.testResults <- testResults
+    END METHOD
+
+    METHOD search(keyword)
+        IF keyword IN testResults THEN
+            RETURN true
+        ELSE
+            RETURN false
+        END IF
+    END METHOD
+
+    METHOD print()
+        PRINT "Lab Report for " + patientName
+        PRINT "Results: " + testResults
+    END METHOD
+END CLASS
+
+CLASS PrescriptionReport IMPLEMENTS Searchable, Printable
+    ATTRIBUTE patientName
+    ATTRIBUTE medicines
+
+    METHOD constructor(patientName, medicines)
+        this.patientName <- patientName
+        this.medicines <- medicines
+    END METHOD
+
+    METHOD search(keyword)
+        RETURN keyword IN medicines
+    END METHOD
+
+    METHOD print()
+        PRINT "Prescription Report for " + patientName
+        PRINT "Medicines: " + medicines
+    END METHOD
+END CLASS
+
+MAIN
+    report1 <- new LabReport("Aman", ["Blood Test: Normal", "X-Ray: Clear"])
+    report2 <- new PrescriptionReport("Aman", ["Paracetamol", "Amoxicillin"])
+
+    reports <- [report1, report2]
+
+    FOR EACH r IN reports
+        r.print()
+        IF r.search("Paracetamol") THEN
+            PRINT "Search Found in: " + r
+        END IF
+    END FOR
+END MAIN
