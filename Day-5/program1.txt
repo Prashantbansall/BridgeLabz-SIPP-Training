@@ -1,0 +1,53 @@
+Q1. Distributed Load Balancer – Queue Simulation (Round-Robin with Dynamic Nodes)
+
+DATA STRUCTURES:
+Queue servers
+Integer requestCounter = 0
+
+FUNCTION initializeServers(serverList):
+    FOR each server in serverList:
+        servers.enqueue(server)
+
+FUNCTION processRequest(requestID):
+    IF servers is empty:
+        PRINT "No active servers available for request " + requestID
+        RETURN
+    server = servers.dequeue()
+    PRINT "Request " + requestID + " → " + server
+    servers.enqueue(server)
+
+FUNCTION addServer(newServer):
+    servers.enqueue(newServer)
+    PRINT "Server " + newServer + " added."
+
+FUNCTION removeServer(targetServer):
+    tempQueue = empty Queue
+    found = FALSE
+    WHILE servers not empty:
+        current = servers.dequeue()
+        IF current == targetServer:
+            found = TRUE
+            CONTINUE  // skip adding back
+        tempQueue.enqueue(current)
+    servers = tempQueue
+    IF found:
+        PRINT "Server " + targetServer + " removed."
+    ELSE:
+        PRINT "Server not found."
+
+MAIN:
+    initializeServers([S1, S2, S3])
+
+    processRequest(R1)   // → S1
+    processRequest(R2)   // → S2
+    processRequest(R3)   // → S3
+
+    addServer(S4)
+
+    processRequest(R4)   // → S1
+    processRequest(R5)   // → S2
+
+    removeServer(S2)
+
+    processRequest(R6)   // → S3
+    processRequest(R7)   // → S4
