@@ -1,0 +1,40 @@
+Q1. Online Store Cart System
+
+CLASS Item
+    ATTRIBUTE name
+    ATTRIBUTE price
+
+    METHOD constructor(name, price)
+        this.name <- name
+        this.price <- price
+    END METHOD
+END CLASS
+
+CLASS ShoppingCart
+    ATTRIBUTE cartItems : List<Item>
+
+    METHOD constructor()
+        cartItems <- empty List
+    END METHOD
+
+    METHOD addItem(item)
+        cartItems.add(item)
+    END METHOD
+
+    GENERIC METHOD calculateTotalPrice(List<T>)
+        total <- 0
+        FOR each element e IN List
+            total <- total + e.price
+        END FOR
+        RETURN total
+    END METHOD
+END CLASS
+
+MAIN
+    cart <- new ShoppingCart()
+    cart.addItem( Item("Laptop", 50000) )
+    cart.addItem( Item("Mouse", 500) )
+
+    total <- cart.calculateTotalPrice(cart.cartItems)
+    PRINT "Total Price: " + total
+END MAIN
