@@ -1,1 +1,39 @@
+Q2. Employee Bonus Distribution Engine
+
+CLASS Employee
+    PROPERTIES: name, department, rating, baseSalary
+    CONSTRUCTOR(name, department, rating, baseSalary)
+
+MAIN:
+    DECLARE List<Employee> employees = new ArrayList<>()
+
+    // Example Employees
+    e1 = new Employee("Alice", "IT", 5, 50000)
+    e2 = new Employee("Bob", "IT", 3, 40000)
+    e3 = new Employee("Charlie", "IT", 2, 30000)
+    e4 = new Employee("David", "Finance", 4, 60000)
+    e5 = new Employee("Eva", "Finance", 5, 70000)
+
+    employees.addAll([e1, e2, e3, e4, e5])
+
+
+    // Step 1: Group employees by department
+    deptGroups = employees.stream()
+                          .collect(groupingBy(Employee::getDepartment))
+
+
+    // Step 2: For each department, calculate bonus pool
+    FOR EACH (department, empList) IN deptGroups.entrySet():
+        totalSalary = empList.stream().mapToDouble(emp -> emp.baseSalary).sum()
+        bonusPool = totalSalary * 0.10
+
+        totalRatings = empList.stream().mapToInt(emp -> emp.rating).sum()
+
+        PRINT "Department: " + department
+        PRINT "  Bonus Pool = " + bonusPool
+
+        // Step 3: Distribute proportionally
+        FOR EACH emp IN empList:
+            share = (emp.rating / totalRatings) * bonusPool
+            PRINT "   " + emp.name + " → " + share
 
