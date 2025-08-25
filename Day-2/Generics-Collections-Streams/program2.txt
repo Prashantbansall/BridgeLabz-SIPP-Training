@@ -1,0 +1,50 @@
+Q2. Hospital Department Mapper
+CLASS Doctor
+    ATTRIBUTE name
+    ATTRIBUTE specialization
+
+    METHOD constructor(name, specialization)
+        this.name <- name
+        this.specialization <- specialization
+    END METHOD
+END CLASS
+
+CLASS Hospital
+    ATTRIBUTE departmentMap : Map<String, List<Doctor>>
+
+    METHOD constructor()
+        departmentMap <- empty Map
+    END METHOD
+
+    METHOD addDoctor(department, doctor)
+        IF departmentMap[department] does not exist THEN
+            departmentMap[department] <- new List
+        END IF
+        departmentMap[department].add(doctor)
+    END METHOD
+
+    METHOD filterDoctorsBySpecialization(specialization)
+        result <- new List
+        FOR EACH dept IN departmentMap
+            FOR EACH doctor IN departmentMap[dept]
+                IF doctor.specialization == specialization THEN
+                    result.add(doctor)
+                END IF
+            END FOR
+        END FOR
+        RETURN result
+    END METHOD
+END CLASS
+
+MAIN
+    hospital <- new Hospital()
+    hospital.addDoctor("Cardiology", Doctor("Dr. A", "Heart"))
+    hospital.addDoctor("Neurology", Doctor("Dr. B", "Brain"))
+    hospital.addDoctor("Cardiology", Doctor("Dr. C", "Heart"))
+
+    result <- hospital.filterDoctorsBySpecialization("Heart")
+    PRINT "Doctors with specialization 'Heart': "
+    FOR EACH doctor IN result
+        PRINT doctor.name
+    END FOR
+END MAIN
