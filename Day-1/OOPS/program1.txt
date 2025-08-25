@@ -1,0 +1,20 @@
+Q1. Pet Adoption App
+
+class pet
+  attribute bark;
+  attribute scream;
+  attribute lovable;
+constructor pet{
+  this.bark=bark
+  this.scream = scream
+  this.lovable= lovable
+}
+ 
+class dog extends pet
+   attributes
+     
+class cat extends pet
+  attributes 
+
+class Bird extends pet
+  attributes 
