@@ -1,0 +1,51 @@
+Q2. Maze Solver Bot
+
+CLASS MazeSolver
+    METHOD solveMaze(maze, x, y, solution)
+        IF x == destinationX AND y == destinationY THEN
+            solution[x][y] <- 1
+            RETURN true
+        END IF
+
+        IF isSafe(maze, x, y) THEN
+            solution[x][y] ← 1   // mark path
+
+            // Move Right
+            IF solveMaze(maze, x, y+1, solution) THEN
+                RETURN true
+            END IF
+
+            // Move Down
+            IF solveMaze(maze, x+1, y, solution) THEN
+                RETURN true
+            END IF
+
+            // Backtrack
+            solution[x][y] ← 0
+            RETURN false
+        END IF
+
+        RETURN false
+    END METHOD
+
+    METHOD isSafe(maze, x, y)
+        RETURN (x, y are inside maze AND maze[x][y] == 0)
+    END METHOD
+END CLASS
+
+MAIN
+    maze <- [
+        [0, 1, 0, 0],
+        [0, 0, 0, 1],
+        [1, 0, 1, 0],
+        [0, 0, 0, 0]
+    ]
+    solution <- empty matrix same size as maze
+
+    solver <- new MazeSolver()
+    IF solver.solveMaze(maze, 0, 0, solution) THEN
+        PRINT solution
+    ELSE
+        PRINT "No path found!"
+    END IF
+END MAIN
