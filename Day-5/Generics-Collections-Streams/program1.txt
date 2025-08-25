@@ -1,1 +1,40 @@
+Q1. Smart Grid Energy Usage Tracker
+
+CLASS Zone
+    PROPERTIES: zoneName
+    CONSTRUCTOR(zoneName)
+    METHOD toString() RETURNS zoneName
+
+CLASS Reading
+    PROPERTIES: meterId, consumption (kW)
+    CONSTRUCTOR(meterId, consumption)
+
+MAIN:
+    DECLARE Map<Zone, Map<LocalDate, List<Reading>>> energyData = new HashMap<>()
+
+    // Example Data
+    zoneA = new Zone("Zone-A")
+    zoneB = new Zone("Zone-B")
+
+    day1 = LocalDate.of(2025, 8, 1)
+
+    readingsA = [Reading("M1", 120), Reading("M2", 90), Reading("M3", 200), Reading("M4", 150)]
+    readingsB = [Reading("M5", 300), Reading("M6", 350), Reading("M7", 250)]
+
+    energyData.putIfAbsent(zoneA, new HashMap<>())
+    energyData.get(zoneA).put(day1, readingsA)
+
+    energyData.putIfAbsent(zoneB, new HashMap<>())
+    energyData.get(zoneB).put(day1, readingsB)
+
+
+    // Process: Find peak usage for each zone, each day
+    FOR EACH (zone, dayMap) IN energyData.entrySet():
+        PRINT "Zone: " + zone
+        FOR EACH (day, readingList) IN dayMap.entrySet():
+            peak = readingList.stream()
+                              .mapToDouble(r -> r.consumption)
+                              .max()
+                              .orElse(0)
+            PRINT "   Day: " + day + " → Peak Load: " + peak + " kW"
 
