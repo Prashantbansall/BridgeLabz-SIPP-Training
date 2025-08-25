@@ -1,0 +1,50 @@
+Q2. Vehicle Rental System
+
+INTERFACE Rentable
+    METHOD calculateRent(days)
+    METHOD rentOut(customerName)
+
+
+ABSTRACT CLASS Vehicle IMPLEMENTS Rentable
+    PROPERTIES:
+        model
+        registrationNumber
+        baseRatePerDay
+
+    METHOD rentOut(customerName):
+        PRINT customerName + " rented " + model
+
+
+CLASS Car EXTENDS Vehicle
+    METHOD calculateRent(days):
+        RETURN days * baseRatePerDay
+
+CLASS Bike EXTENDS Vehicle
+    METHOD calculateRent(days):
+        RETURN days * (baseRatePerDay * 0.8)   // Cheaper rent
+
+CLASS Truck EXTENDS Vehicle
+    METHOD calculateRent(days):
+        RETURN days * (baseRatePerDay * 1.5)   // Higher rent
+
+
+FACTORY CLASS VehicleFactory
+    METHOD createVehicle(type, model, regNo, rate):
+        IF type == "Car" THEN
+            RETURN new Car(model, regNo, rate)
+        ELSE IF type == "Bike" THEN
+            RETURN new Bike(model, regNo, rate)
+        ELSE IF type == "Truck" THEN
+            RETURN new Truck(model, regNo, rate)
+
+
+MAIN:
+    car1 = VehicleFactory.createVehicle("Car", "Honda City", "AB123", 1000)
+    bike1 = VehicleFactory.createVehicle("Bike", "Yamaha", "XY999", 500)
+    truck1 = VehicleFactory.createVehicle("Truck", "Tata", "TR123", 2000)
+
+    car1.rentOut("Alice")
+    PRINT "Car Rent: " + car1.calculateRent(5)
+
+    bike1.rentOut("Bob")
+    PRINT "Bike Rent: " + bike1.calculateRent(3)
