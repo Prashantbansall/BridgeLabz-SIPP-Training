@@ -1,0 +1,39 @@
+Q1. Traffic Signal Simulation
+
+ENUM TrafficLight
+    RED
+    YELLOW
+    GREEN
+END ENUM
+
+CLASS TrafficSignal
+    VARIABLE currentLight : TrafficLight
+
+    METHOD constructor()
+        currentLight <- RED
+    END METHOD
+
+    METHOD changeLight()
+        IF currentLight == RED THEN
+            currentLight <- GREEN
+        ELSE IF currentLight == GREEN THEN
+            currentLight <- YELLOW
+        ELSE IF currentLight == YELLOW THEN
+            currentLight <- RED
+        END IF
+    END METHOD
+
+    METHOD displayLight()
+        PRINT "Current Light: " + currentLight
+    END METHOD
+END CLASS
+
+MAIN
+    CREATE signal <- new TrafficSignal()
+
+    LOOP forever
+        signal.displayLight()
+        WAIT 5 seconds
+        signal.changeLight()
+    END LOOP
+END MAIN
