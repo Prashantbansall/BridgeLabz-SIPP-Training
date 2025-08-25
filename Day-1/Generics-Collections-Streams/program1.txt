@@ -1,1 +1,11 @@
+Q1.Student Score Storage
 
+MAIN:
+    CREATE HashMap scores
+    ADD "Alice" -> 85
+    ADD "Bob" -> 92
+    ADD "Charlie" -> 78
+
+    FIND entry with maximum value using stream
+    STORE the key of that entry in topStudent
+    PRINT topStudent
