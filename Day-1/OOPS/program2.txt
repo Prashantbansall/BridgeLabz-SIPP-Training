@@ -1,0 +1,14 @@
+Q2. Library Membership Tracker
+
+class Member 
+   attribute Name
+   attributes Id
+   attributes membershipdate
+
+constructor Member{
+this.name = name
+this.id= id
+this.membershipdate = membershipdate
+
+}
+  Method checkvalid()
