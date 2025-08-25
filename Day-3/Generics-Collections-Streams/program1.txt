@@ -1,0 +1,48 @@
+Q1. Library Book Filter 
+
+CLASS Book
+    ATTRIBUTE title
+    ATTRIBUTE author
+    ATTRIBUTE year
+    ATTRIBUTE rating
+
+    METHOD constructor(title, author, year, rating)
+        this.title <- title
+        this.author <- author
+        this.year <- year
+        this.rating <- rating
+    END METHOD
+END CLASS
+
+CLASS Library
+    ATTRIBUTE books : List<Book>
+
+    METHOD constructor()
+        books ← empty List
+    END METHOD
+
+    METHOD addBook(book)
+        books.add(book)
+    END METHOD
+
+    METHOD filterHighRatedRecentBooks()
+        RETURN books.stream()
+                    .filter( book -> book.year > 2015 )
+                    .filter( book -> book.rating > 4.5 )
+                    .collectToList()
+    END METHOD
+END CLASS
+
+MAIN
+    lib <- new Library()
+    lib.addBook( Book("Java Basics", "John", 2014, 4.2) )
+    lib.addBook( Book("Advanced Java", "Aman", 2018, 4.7) )
+    lib.addBook( Book("Streams in Action", "Kathy", 2020, 4.8) )
+
+    result ← lib.filterHighRatedRecentBooks()
+
+    PRINT "Books published after 2015 with rating > 4.5:"
+    FOR EACH b IN result
+        PRINT b.title + " (" + b.year + ", Rating: " + b.rating + ")"
+    END FOR
+END MAIN
