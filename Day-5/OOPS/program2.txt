@@ -1,0 +1,93 @@
+Q2. Restaurant POS Billing System
+
+INTERFACE TaxCalculator
+    METHOD calculateTax(basePrice: double) RETURNS double
+
+
+CLASS FoodTax IMPLEMENTS TaxCalculator
+    METHOD calculateTax(basePrice):
+        RETURN basePrice * 0.05
+
+
+CLASS BeverageTax IMPLEMENTS TaxCalculator
+    METHOD calculateTax(basePrice):
+        RETURN basePrice * 0.12
+
+
+CLASS ImportedTax IMPLEMENTS TaxCalculator
+    METHOD calculateTax(basePrice):
+        RETURN basePrice * 0.05 + 100   // Customs duty
+
+
+// Tomorrow: Add LuxuryTax without modifying existing code
+CLASS LuxuryTax IMPLEMENTS TaxCalculator
+    METHOD calculateTax(basePrice):
+        RETURN basePrice * 0.18
+
+
+CLASS MenuItem
+    PROPERTIES: name, basePrice, taxCalculator
+
+    METHOD getFinalPrice():
+        RETURN basePrice + taxCalculator.calculateTax(basePrice)
+
+
+
+INTERFACE DiscountPolicy
+    METHOD applyDiscount(total: double) RETURNS double
+
+
+CLASS NoDiscount IMPLEMENTS DiscountPolicy
+    METHOD applyDiscount(total):
+        RETURN total
+
+
+CLASS FlatDiscount IMPLEMENTS DiscountPolicy
+    PROPERTY flatAmount = 100
+    METHOD applyDiscount(total):
+        RETURN total - flatAmount
+
+
+CLASS PercentageDiscount IMPLEMENTS DiscountPolicy
+    PROPERTY percent = 0.10
+    METHOD applyDiscount(total):
+        RETURN total * (1 - percent)
+
+
+// Tomorrow: Add Buy1Get1 scheme easily
+CLASS BuyOneGetOne IMPLEMENTS DiscountPolicy
+    METHOD applyDiscount(total):
+        RETURN total / 2    // Simplified BOGO logic
+
+
+
+CLASS Bill
+    PROPERTIES: items: List<MenuItem>, discountPolicy
+
+    METHOD calculateBill():
+        subtotal = 0
+        FOR EACH item IN items:
+            subtotal = subtotal + item.getFinalPrice()
+
+        finalAmount = discountPolicy.applyDiscount(subtotal)
+        RETURN finalAmount
+
+
+MAIN:
+    item1 = new MenuItem("Paneer Tikka", 200, new FoodTax())
+    item2 = new MenuItem("Coke", 100, new BeverageTax())
+    item3 = new MenuItem("Imported Cheese", 500, new ImportedTax())
+
+    items = [item1, item2, item3]
+
+    bill1 = new Bill(items, new PercentageDiscount())
+    PRINT bill1.calculateBill()
+    // Applies correct tax + 10% discount
+
+    bill2 = new Bill(items, new BuyOneGetOne())
+    PRINT bill2.calculateBill()
+    // New discount applied without changing billing code
+
+    luxuryItem = new MenuItem("Premium Wine", 2000, new LuxuryTax())
+    bill3 = new Bill([luxuryItem], new NoDiscount())
+    PRINT bill3.calculateBill()
