@@ -1,0 +1,37 @@
+Q1. College Course Registration
+
+CLASS Student
+    PROPERTIES: id, name
+    CONSTRUCTOR(id, name)
+
+CLASS Course
+    PROPERTIES: code, title
+    CONSTRUCTOR(code, title)
+
+MAIN:
+    DECLARE Map<Course, List<Student>> courseMap = new HashMap<>()
+
+    // Create courses
+    course1 = new Course("CS101", "Data Structures")
+    course2 = new Course("MA101", "Calculus")
+
+    // Create students
+    s1 = new Student(1, "Alice")
+    s2 = new Student(2, "Bob")
+    s3 = new Student(3, "Charlie")
+
+    // Register students
+    courseMap.putIfAbsent(course1, new ArrayList<>())
+    courseMap.get(course1).add(s1)
+    courseMap.get(course1).add(s2)
+
+    courseMap.putIfAbsent(course2, new ArrayList<>())
+    courseMap.get(course2).add(s3)
+
+    // Display students per course
+    FOR EACH entry IN courseMap.entrySet():
+        course = entry.key
+        studentList = entry.value
+        PRINT "Course: " + course.title
+        FOR EACH student IN studentList:
+            PRINT " - " + student.name
