@@ -1,0 +1,36 @@
+Q2. Digital Wallet Transactions Report
+
+CLASS Transaction
+    PROPERTIES: id, amount, merchant, date(LocalDate)
+    CONSTRUCTOR(id, amount, merchant, date)
+
+MAIN:
+    DECLARE List<Transaction> transactions = new ArrayList<>()
+
+    // Sample transactions
+    t1 = new Transaction(1, 500, "Amazon", 2025-01-12)
+    t2 = new Transaction(2, 1200, "Amazon", 2025-01-28)
+    t3 = new Transaction(3, 300, "Flipkart", 2025-02-05)
+    t4 = new Transaction(4, 800, "Amazon", 2025-02-11)
+    transactions.addAll([t1, t2, t3, t4])
+
+    // Group by merchant, then month
+    report = transactions.stream()
+        .collect(
+            groupingBy(
+                Transaction::getMerchant,
+                groupingBy(
+                    tx -> tx.date.getMonth(),
+                    summarizingDouble(Transaction::getAmount)
+                )
+            )
+        )
+
+    // Display report
+    FOR EACH merchantEntry IN report.entrySet():
+        PRINT "Merchant: " + merchantEntry.key
+        FOR EACH monthEntry IN merchantEntry.value.entrySet():
+            PRINT " Month: " + monthEntry.key
+            summary = monthEntry.value
+            PRINT "   Count: " + summary.getCount()
+            PRINT "   Total: " + summary.getSum()
