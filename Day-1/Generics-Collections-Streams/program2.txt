@@ -1,0 +1,13 @@
+Q2. Employee Record Keeper
+
+CLASS Employee
+    ATTRIBUTES: name, department
+    CONSTRUCTOR(name, department)
+        SET attributes
+
+MAIN:
+    CREATE ArrayList employees
+    ADD employees with names and departments
+
+    FILTER list to include only employees with department = "IT"
+    PRINT names of filtered employees
