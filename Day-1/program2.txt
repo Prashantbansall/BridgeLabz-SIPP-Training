@@ -1,0 +1,16 @@
+Q2. Call Center Queue Management
+
+CLASS Customer IMPLEMENT Comparable
+    ATTRIBUTES: name, priority ("normal" or "emergency")
+    METHOD compareTo(other)
+        IF this.priority == "emergency" AND other.priority == "normal"
+            RETURN -1 (this comes first)
+        ELSE IF this.priority == "normal" AND other.priority == "emergency"
+            RETURN 1 (this comes later)
+        ELSE RETURN 0
+
+MAIN:
+    CREATE PriorityQueue queue
+    ADD customers with different priorities
+    WHILE queue is not empty
+        REMOVE and PRINT the highest-priority customer
