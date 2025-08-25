@@ -1,0 +1,59 @@
+Q1. Food Delivery System
+
+CLASS Customer
+    ATTRIBUTE name
+    ATTRIBUTE address
+    METHOD constructor(name, address)
+        this.name <- name
+        this.address <- address
+    END METHOD
+END CLASS
+
+CLASS Restaurant
+    ATTRIBUTE name
+    ATTRIBUTE location
+    METHOD constructor(name, location)
+        this.name <- name
+        this.location <- location
+    END METHOD
+END CLASS
+
+CLASS DeliveryBoy
+    ATTRIBUTE name
+    ATTRIBUTE phone
+    METHOD constructor(name, phone)
+        this.name <- name
+        this.phone <- phone
+    END METHOD
+END CLASS
+
+CLASS Order
+    ATTRIBUTE customer : Customer
+    ATTRIBUTE restaurant : Restaurant
+    ATTRIBUTE deliveryBoy : DeliveryBoy
+    ATTRIBUTE items : List<String>
+
+    METHOD constructor(customer, restaurant, deliveryBoy, items)
+        this.customer <- customer
+        this.restaurant <- restaurant
+        this.deliveryBoy <- deliveryBoy
+        this.items <- items
+    END METHOD
+
+    METHOD showOrderDetails()
+        PRINT "Customer: " + customer.name + " (" + customer.address + ")"
+        PRINT "Restaurant: " + restaurant.name + " (" + restaurant.location + ")"
+        PRINT "Delivery By: " + deliveryBoy.name + " (" + deliveryBoy.phone + ")"
+        PRINT "Items: " + items
+    END METHOD
+END CLASS
+
+MAIN
+    cust <- new Customer("Aman", "Delhi")
+    rest <- new Restaurant("FoodHub", "Connaught Place")
+    boy <- new DeliveryBoy("Rahul", "9999999999")
+    items <- ["Burger", "Fries", "Coke"]
+
+    order <- new Order(cust, rest, boy, items)
+    order.showOrderDetails()
+END MAIN
