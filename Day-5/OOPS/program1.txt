@@ -1,0 +1,62 @@
+Q1. Healthcare Diagnosis Engine
+
+INTERFACE DiagnosisStrategy
+    METHOD diagnose(symptoms: List<String>) RETURNS List<String>
+
+
+CLASS RuleBasedDiagnosis IMPLEMENTS DiagnosisStrategy
+    METHOD diagnose(symptoms):
+        IF symptoms CONTAINS ["fever", "cough", "fatigue"]:
+            RETURN ["Flu", "COVID-19"]
+        ELSE IF symptoms CONTAINS ["stomach pain", "vomiting"]:
+            RETURN ["Food Poisoning"]
+        ELSE
+            RETURN ["Unknown Disease"]
+
+
+CLASS AIBasedDiagnosis IMPLEMENTS DiagnosisStrategy
+    METHOD diagnose(symptoms):
+        // Imagine ML/AI prediction logic
+        IF symptoms CONTAINS ["headache", "dizziness", "nausea"]:
+            RETURN ["Migraine", "Vertigo"]
+        ELSE
+            RETURN ["Consult Specialist"]
+
+
+CLASS ProbabilityBasedDiagnosis IMPLEMENTS DiagnosisStrategy
+    METHOD diagnose(symptoms):
+        // Weighted probability-based matching
+        RETURN ["80% Flu", "20% Malaria"]
+
+
+// Tomorrow: New strategy can be added easily
+CLASS GeneticPatternDiagnosis IMPLEMENTS DiagnosisStrategy
+    METHOD diagnose(symptoms):
+        RETURN ["Genetic Disorder Match: Possible Thalassemia"]
+
+
+CLASS DiagnosisContext
+    PROPERTY strategy: DiagnosisStrategy
+
+    METHOD setStrategy(newStrategy):
+        strategy = newStrategy
+
+    METHOD executeDiagnosis(symptoms):
+        RETURN strategy.diagnose(symptoms)
+
+
+MAIN:
+    patient1Symptoms = ["fever", "cough", "fatigue"]
+    context = new DiagnosisContext()
+    context.setStrategy(new RuleBasedDiagnosis())
+    PRINT context.executeDiagnosis(patient1Symptoms)  
+    // Output: ["Flu", "COVID-19"]
+
+    patient2Symptoms = ["headache", "dizziness", "nausea"]
+    context.setStrategy(new AIBasedDiagnosis())
+    PRINT context.executeDiagnosis(patient2Symptoms)  
+    // Output: ["Migraine", "Vertigo"]
+
+    patient3Symptoms = ["gene_marker_X"]
+    context.setStrategy(new GeneticPatternDiagnosis())  
+    PRINT context.executeDiagnosis(patient3Symptoms)
