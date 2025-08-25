@@ -1,0 +1,53 @@
+Q1. Banking Portal
+
+CLASS Account
+    PROPERTIES:
+        accountNumber
+        balance
+
+    METHOD deposit(amount):
+        balance = balance + amount
+
+    METHOD withdraw(amount):    // Base generic rule
+        IF balance >= amount THEN
+            balance = balance - amount
+        ELSE
+            PRINT "Insufficient balance"
+
+    METHOD displayBalance():
+        PRINT "Account " + accountNumber + " has balance: " + balance
+
+
+CLASS SavingAccount EXTENDS Account
+    PROPERTIES:
+        withdrawalLimit = 10000
+
+    METHOD withdraw(amount):
+        IF amount > withdrawalLimit THEN
+            PRINT "Exceeds Saving Account withdrawal limit"
+        ELSE IF balance >= amount THEN
+            balance = balance - amount
+        ELSE
+            PRINT "Insufficient funds"
+
+
+CLASS CurrentAccount EXTENDS Account
+    PROPERTIES:
+        overdraftLimit = 5000
+
+    METHOD withdraw(amount):
+        IF balance + overdraftLimit >= amount THEN
+            balance = balance - amount
+        ELSE
+            PRINT "Exceeds overdraft limit"
+
+
+MAIN:
+    CREATE saving = new SavingAccount()
+    saving.deposit(20000)
+    saving.withdraw(12000)   // Exceeds limit
+    saving.withdraw(8000)    // Allowed
+
+    CREATE current = new CurrentAccount()
+    current.deposit(5000)
+    current.withdraw(9000)   // Uses overdraft
