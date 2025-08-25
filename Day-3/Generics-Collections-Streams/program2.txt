@@ -1,0 +1,47 @@
+Q2. Payment Processor
+
+CLASS UPI
+    ATTRIBUTE upiId
+    METHOD constructor(upiId)
+        this.upiId <- upiId
+    END METHOD
+END CLASS
+
+CLASS Card
+    ATTRIBUTE cardNumber
+    METHOD constructor(cardNumber)
+        this.cardNumber <- cardNumber
+    END METHOD
+END CLASS
+
+CLASS NetBanking
+    ATTRIBUTE accountNumber
+    METHOD constructor(accountNumber)
+        this.accountNumber <- accountNumber
+    END METHOD
+END CLASS
+
+// Generic Transaction class
+CLASS Transaction<T>
+    ATTRIBUTE paymentMethod : T
+    ATTRIBUTE amount
+
+    METHOD constructor(paymentMethod, amount)
+        this.paymentMethod <- paymentMethod
+        this.amount <- amount
+    END METHOD
+
+    METHOD processPayment()
+        PRINT "Processing payment of " + amount + " using " + paymentMethod
+    END METHOD
+END CLASS
+
+MAIN
+    upiPay <- new Transaction<UPI>( UPI("aman@upi"), 1000 )
+    cardPay <- new Transaction<Card>( Card("1234-5678-9012"), 5000 )
+    netPay <- new Transaction<NetBanking>( NetBanking("ACC123456"), 2000 )
+
+    upiPay.processPayment()
+    cardPay.processPayment()
+    netPay.processPayment()
+END MAIN
