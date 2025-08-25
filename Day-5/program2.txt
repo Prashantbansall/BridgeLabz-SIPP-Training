@@ -1,0 +1,54 @@
+Q2. Autocomplete Search Suggestions – Trie Implementation
+
+DATA STRUCTURES:
+TrieNode {
+    children : Map<Character, TrieNode>
+    isEndOfWord : Boolean
+    popularity : Integer
+}
+Trie root
+
+FUNCTION insert(word, score):
+    node = root
+    FOR each char in word:
+        IF char not in node.children:
+            node.children[char] = new TrieNode()
+        node = node.children[char]
+    node.isEndOfWord = TRUE
+    node.popularity = score
+
+FUNCTION searchPrefix(prefix):
+    node = root
+    FOR each char in prefix:
+        IF char not in node.children:
+            RETURN []  // no matches
+        node = node.children[char]
+    RETURN collectSuggestions(node, prefix)
+
+FUNCTION collectSuggestions(node, currentWord):
+    results = []
+    IF node.isEndOfWord:
+        results.append((currentWord, node.popularity))
+
+    FOR each child in node.children:
+        results += collectSuggestions(child, currentWord + child)
+
+    RETURN results
+
+FUNCTION getTopNMatches(prefix, N):
+    suggestions = searchPrefix(prefix)
+    SORT suggestions by popularity (descending)
+    RETURN first N suggestions
+
+MAIN:
+    insert("pizza hut", 50)
+    insert("pizza point", 40)
+    insert("pita bread", 30)
+    insert("pizzeria", 20)
+
+    results = getTopNMatches("pi", 3)
+    PRINT results   // ["pizza hut", "pizza point", "pita bread"]
+
+    insert("pineapple cafe", 25)
+    results = getTopNMatches("pi", 3)
+    PRINT results   // includes "pineapple cafe"
