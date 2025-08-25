@@ -1,0 +1,37 @@
+Q1. Online Quiz Timer
+
+CLASS QuizTimer
+    ATTRIBUTE slots[]
+    ATTRIBUTE totalQuestions
+    ATTRIBUTE currentIndex
+
+    METHOD constructor(slotsArray)
+        slots <- slotsArray
+        totalQuestions <- length(slotsArray)
+        currentIndex <- 0
+    END METHOD
+
+    METHOD startQuiz()
+        LOOP i FROM 0 TO totalQuestions-1
+            currentTime <- slots[currentIndex]
+
+            WHILE currentTime > 0
+                PRINT "Time remaining for Question " + (i+1) + ": " + currentTime + " sec"
+                IF currentTime <= 5 THEN
+                    PRINT "Warning"
+                END IF
+                WAIT 1 second
+                currentTime <- currentTime - 1
+            END WHILE
+
+            PRINT "Time over for Question " + (i+1)
+            currentIndex <- (currentIndex + 1) MOD totalQuestions
+        END LOOP
+    END METHOD
+END CLASS
+
+MAIN
+    slots <- [30, 45, 60]
+    quiz <- new QuizTimer(slots)
+    quiz.startQuiz()
+END MAIN
