@@ -1,0 +1,33 @@
+Q2. Parking Lot Ticketing System
+
+CLASS Vehicle
+    ATTRIBUTES: vehicleNumber, entryTime
+    METHOD calculateFee(exitTime)
+        RETURN 0   // overridden in subclasses
+
+CLASS Car EXTENDS Vehicle
+    METHOD calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 50 + (hours - 1) * 30
+        RETURN fee
+
+CLASS Bike EXTENDS Vehicle
+    METHOD calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 20 + (hours - 1) * 10
+        RETURN fee
+
+CLASS Truck EXTENDS Vehicle
+    METHOD calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 100 + (hours - 1) * 50
+        RETURN fee
+
+MAIN
+    CREATE Car("KA05AB1234", 10:00)
+    CREATE Bike("KA05XY7890", 11:15)
+    CREATE Truck("KA09TR5566", 09:30)
+
+    Car exits 1:30 PM → calculateFee
+    Bike exits 12:00 PM → calculateFee
+    Truck exits 2:00 PM → calculateFee
