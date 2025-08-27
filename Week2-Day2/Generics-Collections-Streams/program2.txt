@@ -1,0 +1,21 @@
+Q2. Online Survey Report Generator
+
+CLASS SurveyResponse
+    ATTRIBUTES: restaurantName, rating
+
+INPUT responses = list of SurveyResponse
+
+CREATE Map restaurantAverage
+
+FOR each response in responses
+    ADD rating to restaurant’s list
+
+FOR each restaurant
+    average = sum(ratings) / count(ratings)
+    restaurantAverage[restaurant] = average
+
+PRINT restaurantAverage
+
+FIND restaurant with highest average
+FIND restaurant with lowest average
+PRINT results
