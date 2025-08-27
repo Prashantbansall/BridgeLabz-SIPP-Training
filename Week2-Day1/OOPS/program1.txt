@@ -1,61 +1,28 @@
 Q1. Online Exam Portal (Basic)
 
-class User {
-    String username;
-    String password;
+CLASS User
+    ATTRIBUTES: username, password
+    METHOD login()
+        PRINT "Generic login"
 
-    User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+CLASS Student EXTENDS User
+    ATTRIBUTE: enrolled
+    METHOD login()
+        IF enrolled == true THEN
+            PRINT "Student logged in, show exams"
+        ELSE
+            PRINT "Access denied"
 
-    void login() {
-        System.out.println("Generic user login...");
-    }
-}
+CLASS Admin EXTENDS User
+    ATTRIBUTE: isAdmin
+    METHOD login()
+        IF isAdmin == true THEN
+            PRINT "Admin logged in, show exam management"
+        ELSE
+            PRINT "Access denied"
 
-class Student extends User {
-    boolean enrolled;
-
-    Student(String username, String password, boolean enrolled) {
-        super(username, password);
-        this.enrolled = enrolled;
-    }
-
-    @Override
-    void login() {
-        if (enrolled) {
-            System.out.println("Student " + username + " logged in. Exams available.");
-        } else {
-            System.out.println("Access denied: Student not enrolled.");
-        }
-    }
-}
-
-class Admin extends User {
-    boolean isAdmin;
-
-    Admin(String username, String password, boolean isAdmin) {
-        super(username, password);
-        this.isAdmin = isAdmin;
-    }
-
-    @Override
-    void login() {
-        if (isAdmin) {
-            System.out.println("Admin " + username + " logged in. Manage exams.");
-        } else {
-            System.out.println("Access denied: Not an admin.");
-        }
-    }
-}
-
-public class OnlineExamPortal {
-    public static void main(String[] args) {
-        Student s = new Student("john123", "pass", true);
-        s.login();
-
-        Admin a = new Admin("admin1", "adminpass", true);
-        a.login();
-    }
-}
+MAIN
+    CREATE Student s("john123", "pass", enrolled = true)
+    s.login()
+    CREATE Admin a("admin1", "adminpass", isAdmin = true)
+    a.login()
