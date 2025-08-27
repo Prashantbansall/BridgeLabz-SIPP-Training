@@ -1,0 +1,29 @@
+Q1. Online Exam Portal (Basic)
+
+CLASS User
+    ATTRIBUTES: username, password
+    METHOD login()
+        PRINT "Generic login"
+
+CLASS Student EXTENDS User
+    ATTRIBUTE: enrolled
+    METHOD login()
+        IF enrolled == true
+            PRINT "Student logged in. Show exams"
+        ELSE
+            PRINT "Access denied"
+
+CLASS Admin EXTENDS User
+    ATTRIBUTE: isAdmin
+    METHOD login()
+        IF isAdmin == true
+            PRINT "Admin logged in. Show management tools"
+        ELSE
+            PRINT "Access denied"
+
+MAIN
+    CREATE Student s("john123", "pass", enrolled = true)
+    s.login()
+
+    CREATE Admin a("admin1", "adminpass", isAdmin = true)
+    a.login()
