@@ -1,26 +1,11 @@
 Q1. Bus Route Navigator
 
-import java.util.LinkedList;
+INITIALIZE LinkedList route = [Depot → Main Street → City Mall → Hospital → Airport]
 
-public class BusRouteNavigator {
-    public static void main(String[] args) {
-        LinkedList<String> route = new LinkedList<>();
-        route.add("Depot");
-        route.add("Main Street");
-        route.add("City Mall");
-        route.add("Hospital");
-        route.add("Airport");
+INSERT "University" AFTER "City Mall"
 
-        System.out.println("Initial route: " + route);
+REMOVE "Hospital"
 
-        route.add(3, "University"); // insert
-        System.out.println("After adding University: " + route);
-
-        route.remove("Hospital"); // delete
-        System.out.println("After removing Hospital: " + route);
-
-        if (route.contains("Airport")) {
-            System.out.println("Airport stop is on the route.");
-        }
-    }
-}
+SEARCH "Airport"
+    IF found
+        PRINT "Airport is on the route"
