@@ -1,0 +1,32 @@
+Q2. Attendance Marker
+
+CREATE 2D ARRAY attendance[30][30]   // 30 students, 30 days
+
+METHOD markAttendance(student, day, status)
+    attendance[student][day] = status   // 1 = Present, 0 = Absent
+
+METHOD dailySummary(day)
+    count = 0
+    FOR each student
+        IF attendance[student][day] == 1
+            count++
+    PRINT "Day day: count students present"
+
+METHOD monthlySummary(student)
+    total = 0
+    FOR each day
+        IF attendance[student][day] == 1
+            total++
+    RETURN total
+
+METHOD defaulterList()
+    FOR each student
+        presentDays = monthlySummary(student)
+        IF presentDays < 22   // 75% of 30
+            PRINT "Student student is defaulter"
+
+EXAMPLE RUN
+    Mark Day 1: Student 1 = Present, Student 3 = Absent
+    Check Day 10 summary → count 1s in column 10
+    Check Student 5 monthly total → count 1s in row 5
+    Generate defaulter list
