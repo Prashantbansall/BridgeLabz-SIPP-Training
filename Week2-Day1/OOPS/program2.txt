@@ -1,56 +1,30 @@
 Q2. Movie Ticket Booking
 
-class Ticket {
-    String movie;
-    String seat;
-    double price;
-    boolean booked;
+CLASS Ticket
+    ATTRIBUTES: movie, seat, price, booked = true
+    METHOD cancel()
+        booked = false
+        PRINT "Ticket cancelled"
 
-    Ticket(String movie, String seat, double price) {
-        this.movie = movie;
-        this.seat = seat;
-        this.price = price;
-        this.booked = true;
-    }
+CLASS Theatre
+    ATTRIBUTE: seatMap (seat -> availability)
+    METHOD bookTicket(movie, seat, price)
+        IF seat is available THEN
+            Mark seat unavailable
+            RETURN new Ticket(movie, seat, price)
+        ELSE
+            PRINT "Seat not available"
 
-    void cancel() {
-        booked = false;
-        System.out.println("Ticket cancelled for " + movie + ", seat " + seat);
-    }
-}
+    METHOD cancelTicket(ticket)
+        Mark ticket.seat as available
+        ticket.cancel()
 
-class Theatre {
-    String name;
-    java.util.Map<String, Boolean> seats = new java.util.HashMap<>();
+CLASS Customer
+    METHOD bookMovie(theatre, movie, seat)
+        CALL theatre.bookTicket(movie, seat)
 
-    Theatre(String name) {
-        this.name = name;
-        seats.put("A12", true); // available
-    }
+MAIN
+    CREATE Theatre
+    Customer books "Avengers", seat A12
+    Customer cancels ticket
 
-    Ticket bookTicket(String movie, String seat, double price) {
-        if (seats.containsKey(seat) && seats.get(seat)) {
-            seats.put(seat, false);
-            System.out.println("Ticket booked: " + movie + ", seat " + seat);
-            return new Ticket(movie, seat, price);
-        } else {
-            System.out.println("Seat not available.");
-            return null;
-        }
-    }
-
-    void cancelTicket(Ticket t) {
-        if (t != null && t.booked) {
-            seats.put(t.seat, true);
-            t.cancel();
-        }
-    }
-}
-
-public class MovieTicketBooking {
-    public static void main(String[] args) {
-        Theatre t = new Theatre("PVR");
-        Ticket ticket = t.bookTicket("Avengers: Endgame", "A12", 300);
-        t.cancelTicket(ticket);
-    }
-}
