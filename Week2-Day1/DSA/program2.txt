@@ -1,0 +1,18 @@
+Q2. Attendance Marker
+
+CREATE 2D ARRAY attendance[students][days]
+
+FOR each student s
+    FOR each day d
+        attendance[s][d] = 'P'   // default present
+
+UPDATE attendance[student=1][day=3] = 'A'
+CORRECT to 'P'
+
+GENERATE report:
+FOR each student s
+    count = 0
+    FOR each day d
+        IF attendance[s][d] == 'P'
+            count++
+    PRINT "Student s was present count days"
