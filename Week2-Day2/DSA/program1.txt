@@ -1,0 +1,11 @@
+Q1. Bus Route Navigator
+
+INITIALIZE LinkedList route = [Depot → Main Street → City Mall → Hospital → Airport]
+
+INSERT "University" AFTER "City Mall"
+
+REMOVE "Hospital"
+
+SEARCH "Airport"
+    IF found
+        PRINT "Airport is on the route"
