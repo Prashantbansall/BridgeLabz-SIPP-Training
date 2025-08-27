@@ -1,0 +1,19 @@
+Q2. Simple Word Counter
+
+INPUT text paragraph
+
+CONVERT text to lowercase
+REMOVE punctuation
+SPLIT into words
+
+CREATE Map wordCount
+
+FOR each word w in words
+    IF w in wordCount
+        wordCount[w]++
+    ELSE
+        wordCount[w] = 1
+
+SORT wordCount by frequency (descending)
+
+PRINT words with their counts
