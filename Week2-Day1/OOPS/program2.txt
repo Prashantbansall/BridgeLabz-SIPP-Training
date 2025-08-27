@@ -1,0 +1,56 @@
+Q2. Movie Ticket Booking
+
+class Ticket {
+    String movie;
+    String seat;
+    double price;
+    boolean booked;
+
+    Ticket(String movie, String seat, double price) {
+        this.movie = movie;
+        this.seat = seat;
+        this.price = price;
+        this.booked = true;
+    }
+
+    void cancel() {
+        booked = false;
+        System.out.println("Ticket cancelled for " + movie + ", seat " + seat);
+    }
+}
+
+class Theatre {
+    String name;
+    java.util.Map<String, Boolean> seats = new java.util.HashMap<>();
+
+    Theatre(String name) {
+        this.name = name;
+        seats.put("A12", true); // available
+    }
+
+    Ticket bookTicket(String movie, String seat, double price) {
+        if (seats.containsKey(seat) && seats.get(seat)) {
+            seats.put(seat, false);
+            System.out.println("Ticket booked: " + movie + ", seat " + seat);
+            return new Ticket(movie, seat, price);
+        } else {
+            System.out.println("Seat not available.");
+            return null;
+        }
+    }
+
+    void cancelTicket(Ticket t) {
+        if (t != null && t.booked) {
+            seats.put(t.seat, true);
+            t.cancel();
+        }
+    }
+}
+
+public class MovieTicketBooking {
+    public static void main(String[] args) {
+        Theatre t = new Theatre("PVR");
+        Ticket ticket = t.bookTicket("Avengers: Endgame", "A12", 300);
+        t.cancelTicket(ticket);
+    }
+}
