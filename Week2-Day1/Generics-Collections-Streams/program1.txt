@@ -1,1 +1,15 @@
+Q1. Daily Tasks Organizer
+
+CREATE LinkedHashMap tasks
+id = 1
+
+ADD (id=1, "Check emails")
+ADD (id=2, "Prepare sales report")
+ADD (id=3, "Call client")
+
+PRINT tasks
+
+REMOVE task with id=2
+
+PRINT remaining tasks in insertion order
 
