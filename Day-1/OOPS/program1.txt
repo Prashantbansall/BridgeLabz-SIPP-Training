@@ -1,8 +1,8 @@
 Q1. Pet Adoption App
 
 class pet
-  attribute bark;
-  attribute scream;
+  attribute name;
+  attribute breed;
   attribute lovable;
 constructor pet{
   this.bark=bark
@@ -10,11 +10,20 @@ constructor pet{
   this.lovable= lovable
 }
  
-class dog extends pet
-   attributes
+class dog extends pet (
+   attribute name;
+   attribute breed; 
+   attribute bark;
+)
      
-class cat extends pet
-  attributes 
+class cat extends pet (
+  attribut name;
+  attribute breed;
+  attribute meow;
+)
 
-class Bird extends pet
-  attributes 
+class Bird extends pet {
+  attribute name;
+  attribute breed;
+  attribute chrip;
+{
