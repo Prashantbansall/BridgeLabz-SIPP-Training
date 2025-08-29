@@ -1,14 +1,23 @@
 Q2. Library Membership Tracker
 
-class Member 
-   attribute Name
-   attributes Id
-   attributes membershipdate
+class Member {
+   attribute name
+   attributes id
+   attributes membershipDate
 
-constructor Member{
-this.name = name
-this.id= id
-this.membershipdate = membershipdate
+   constructor Member(name, id, membershipDate){
+      this.name = name;
+      this.id= id;
+      this.membershipDate = membershipDate;
+   }
+   Method checkvalid() {
+      currentDate = today’s date
+      expiryDate = membershipDate + validityPeriodInDays
 
+      if (currentDate <= expiryDate) {
+         return true   
+      } else {
+         return false 
+      }
+   }
 }
-  Method checkvalid()
